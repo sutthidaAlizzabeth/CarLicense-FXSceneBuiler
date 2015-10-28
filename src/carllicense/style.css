@@ -1,0 +1,19 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 16, 2015, 9:13:10 AM
+    Author     : Student Lab
+*/
+
+#boxBtn{
+    -fx-background-color: rgba(255, 255, 255, 0.2);
+}
+#titleLogin{
+    -fx-background-color: rgba(255, 255, 255,1);
+}
+#username{
+    
+}

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.input.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="768.0" prefWidth="1024.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="carllicense.MenuSelectController">
+   <children>
+      <MenuBar maxWidth="-Infinity" minWidth="-Infinity" prefWidth="1024.0">
+        <menus>
+            <Menu mnemonicParsing="false" text="ไฟล์">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="ออกจากระบบ" />
+                  <MenuItem fx:id="exit" mnemonicParsing="false" onAction="#exit" text="ปิดโปรแกรม">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="Q" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="ช่วยเหลือ">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="เกี่ยวกับโปรแกรม" />
+               </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <GridPane AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="50.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="70.0" prefWidth="500.0" text="ออกใบขับขี่ / แก้ไขข้อมูล">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets top="50.0" />
+               </GridPane.margin>
+            </Button>
+            <Button layoutX="272.0" layoutY="87.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="70.0" prefWidth="500.0" text="ออกรายงาน" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="50.0" />
+               </GridPane.margin>
+            </Button>
+            <Button alignment="CENTER" cancelButton="true" layoutX="272.0" layoutY="310.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="70.0" prefWidth="500.0" text="ออกจากระบบ" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Arial Bold" size="36.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="150.0" />
+               </GridPane.margin>
+            </Button>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
