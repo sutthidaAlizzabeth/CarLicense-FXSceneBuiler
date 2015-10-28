@@ -14,6 +14,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.shape.Rectangle;
+import javafx.scene.text.Text;
 
 /**
  * FXML Controller class
@@ -47,6 +48,8 @@ public class CheckProfileController implements Initializable {
     private Button btn_home;
     @FXML
     private Button btn_next;
+    @FXML
+    private Text result;
 
     /**
      * Initializes the controller class.
