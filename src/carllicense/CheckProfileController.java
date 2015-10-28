@@ -5,16 +5,21 @@
  */
 package carllicense;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
+import javafx.stage.Stage;
 
 /**
  * FXML Controller class
@@ -79,6 +84,15 @@ public class CheckProfileController implements Initializable {
 
     @FXML
     private void goToHistory(ActionEvent event) {
+    }
+
+    @FXML
+    private void goToHome(ActionEvent event) throws IOException {
+        Parent page = FXMLLoader.load(getClass().getResource("menuSelect.fxml"));
+        Scene scene = new Scene(page);
+        Stage stage = (Stage) btn_home.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
     }
     
 }
