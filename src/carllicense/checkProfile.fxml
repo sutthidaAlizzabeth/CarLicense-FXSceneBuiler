@@ -64,7 +64,7 @@
                               <Font name="Arial" size="18.0" />
                            </font>
                         </Label>
-                        <TextField fx:id="search" prefHeight="33.0" prefWidth="200.0" GridPane.columnIndex="1">
+                        <TextField fx:id="search" prefHeight="33.0" prefWidth="200.0" promptText="1234567890123" GridPane.columnIndex="1">
                            <font>
                               <Font name="Arial" size="18.0" />
                            </font>

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.shape.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.text.*?>
@@ -63,15 +64,18 @@
                               <Font name="Arial" size="18.0" />
                            </font>
                         </Label>
-                        <TextField prefHeight="33.0" prefWidth="200.0" promptText="1234567890123" GridPane.columnIndex="1">
+                        <TextField fx:id="search" prefHeight="33.0" prefWidth="200.0" promptText="1234567890123" GridPane.columnIndex="1">
                            <font>
                               <Font name="Arial" size="18.0" />
                            </font>
                         </TextField>
-                        <Button mnemonicParsing="false" text="แสดงประวัติ" GridPane.columnIndex="2">
+                        <Button fx:id="btn_search" mnemonicParsing="false" onAction="#searchId" text="แสดงประวัติ" GridPane.columnIndex="2">
                            <font>
                               <Font name="Arial" size="18.0" />
                            </font>
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
                         </Button>
                      </children>
                   </GridPane>
@@ -87,12 +91,15 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button mnemonicParsing="false" prefWidth="200.0" text="3 บันทึกการทำใบขับขี่ " GridPane.columnIndex="2" />
-                  <Button mnemonicParsing="false" prefWidth="200.0" text="2 ประวัติการทำใบขับขี่ " GridPane.columnIndex="1" />
-                  <Button mnemonicParsing="false" prefWidth="200.0" text="1 ตรวจสอบประวัติ" />
+                  <Button fx:id="btn_license" mnemonicParsing="false" onAction="#goToLicense" prefWidth="200.0" text="3 บันทึกการทำใบขับขี่ " GridPane.columnIndex="2" />
+                  <Button fx:id="btn_history" mnemonicParsing="false" onAction="#goToHistory" prefWidth="200.0" text="2 ประวัติการทำใบขับขี่ " GridPane.columnIndex="1" />
+                  <Button mnemonicParsing="false" prefWidth="200.0" text="1 ตรวจสอบประวัติ">
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Button>
                </children>
             </GridPane>
-            <GridPane style="-fx-background-color: #000000;" GridPane.rowIndex="2">
+            <GridPane style="-fx-background-color: #d7ddeb;" GridPane.rowIndex="2">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
               </columnConstraints>
@@ -120,14 +127,29 @@
                         <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
                      </GridPane.margin>
                      <children>
-                        <Button mnemonicParsing="false" text="แก้ไขข้อมูล" GridPane.columnIndex="1" GridPane.halignment="RIGHT" />
-                        <GridPane hgap="20.0" GridPane.columnSpan="2" GridPane.rowIndex="1">
+                        <Rectangle fx:id="data_bg3" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff42" height="180.0" layoutX="110.0" layoutY="38.0" stroke="#2197ff42" strokeType="INSIDE" visible="false" width="260.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets left="100.0" top="15.0" />
+                           </GridPane.margin>
+                        </Rectangle>
+                        <Rectangle fx:id="data_bg1" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff42" height="180.0" stroke="#2197ff42" strokeType="INSIDE" visible="false" width="570.0" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets left="30.0" top="15.0" />
+                           </GridPane.margin>
+                        </Rectangle>
+                        <Rectangle fx:id="data_bg2" arcHeight="5.0" arcWidth="5.0" fill="#1f93ff42" height="200.0" stroke="#2197ff42" strokeType="INSIDE" visible="false" width="570.0" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="30.0" />
+                           </GridPane.margin>
+                        </Rectangle>
+                        <Button fx:id="data_btn" mnemonicParsing="false" text="แก้ไขข้อมูล" visible="false" GridPane.columnIndex="1" GridPane.halignment="RIGHT" />
+                        <GridPane fx:id="data1" hgap="20.0" visible="false" GridPane.columnSpan="2" GridPane.rowIndex="1">
                           <columnConstraints>
-                            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="184.0" minWidth="10.0" prefWidth="160.0" />
-                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="278.0" minWidth="10.0" prefWidth="160.0" />
-                              <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="445.0" minWidth="10.0" prefWidth="110.0" />
-                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="286.0" minWidth="10.0" prefWidth="153.0" />
-                              <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="284.0" minWidth="10.0" prefWidth="284.0" />
+                            <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="184.0" minWidth="10.0" prefWidth="128.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="278.0" minWidth="10.0" prefWidth="158.0" />
+                              <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="445.0" minWidth="10.0" prefWidth="99.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="286.0" minWidth="10.0" prefWidth="173.0" />
+                              <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="306.0" minWidth="10.0" prefWidth="306.0" />
                           </columnConstraints>
                           <rowConstraints>
                             <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
@@ -140,45 +162,48 @@
                                  <image>
                                     <Image url="@116833916%20(1).jpg" />
                                  </image>
+                                 <GridPane.margin>
+                                    <Insets left="70.0" />
+                                 </GridPane.margin>
                               </ImageView>
-                              <Label text="สกุล :" GridPane.columnIndex="2">
+                              <Label text="สกุล:" GridPane.columnIndex="2">
                                  <font>
-                                    <Font name="Arial" size="16.0" />
+                                    <Font name="Arial Bold" size="16.0" />
                                  </font>
                               </Label>
-                              <Label text="ชื่อ :">
+                              <Label text="ชื่อ:">
                                  <font>
-                                    <Font name="Arial" size="16.0" />
+                                    <Font name="Arial Bold" size="16.0" />
                                  </font>
                               </Label>
-                              <Label text="Name :" GridPane.rowIndex="1">
+                              <Label text="Name:" GridPane.rowIndex="1">
                                  <font>
-                                    <Font name="Arial" size="16.0" />
+                                    <Font name="Arial Bold" size="16.0" />
                                  </font>
                               </Label>
-                              <Label text="วันเกิด :" GridPane.rowIndex="2">
+                              <Label text="วันเกิด:" GridPane.rowIndex="2">
                                  <font>
-                                    <Font name="Arial" size="16.0" />
+                                    <Font name="Arial Bold" size="16.0" />
                                  </font>
                               </Label>
-                              <Label text="หมู่เลือด :" GridPane.rowIndex="3">
+                              <Label text="หมู่เลือด:" GridPane.rowIndex="3">
                                  <font>
-                                    <Font name="Arial" size="16.0" />
+                                    <Font name="Arial Bold" size="16.0" />
                                  </font>
                               </Label>
-                              <Label text="Surname :" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                              <Label text="Surname:" GridPane.columnIndex="2" GridPane.rowIndex="1">
                                  <font>
-                                    <Font name="Arial" size="16.0" />
+                                    <Font name="Arial Bold" size="16.0" />
                                  </font>
                               </Label>
-                              <Label text="สัญชาติ :" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                              <Label text="สัญชาติ:" GridPane.columnIndex="2" GridPane.rowIndex="2">
                                  <font>
-                                    <Font name="Arial" size="16.0" />
+                                    <Font name="Arial Bold" size="16.0" />
                                  </font>
                               </Label>
-                              <Label text="โรคประจำตัว :" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                              <Label text="โรคประจำตัว:" GridPane.columnIndex="2" GridPane.rowIndex="3">
                                  <font>
-                                    <Font name="Arial" size="16.0" />
+                                    <Font name="Arial Bold" size="16.0" />
                                  </font>
                               </Label>
                               <Label text=" วิวผกา" GridPane.columnIndex="1">
@@ -197,7 +222,7 @@
                                     <Insets left="5.0" />
                                  </GridPane.margin>
                               </Label>
-                              <Label text="เมษายน, 29 2538" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                              <Label text="29 เมษายน 2538" GridPane.columnIndex="1" GridPane.rowIndex="2">
                                  <font>
                                     <Font name="Arial" size="16.0" />
                                  </font>
@@ -235,34 +260,87 @@
                               </Label>
                            </children>
                         </GridPane>
-                        <GridPane hgap="20.0" prefHeight="214.0" prefWidth="542.0" GridPane.rowIndex="2">
+                        <GridPane fx:id="data2" hgap="20.0" prefHeight="214.0" prefWidth="542.0" visible="false" GridPane.rowIndex="2">
                           <columnConstraints>
-                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="201.0" minWidth="10.0" prefWidth="159.0" />
-                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="314.0" minWidth="10.0" prefWidth="266.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="201.0" minWidth="10.0" prefWidth="126.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="403.0" minWidth="10.0" prefWidth="403.0" />
                           </columnConstraints>
                           <rowConstraints>
-                            <RowConstraints maxHeight="102.0" minHeight="10.0" prefHeight="81.0" vgrow="SOMETIMES" />
-                            <RowConstraints maxHeight="146.0" minHeight="10.0" prefHeight="133.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="102.0" minHeight="10.0" prefHeight="82.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="146.0" minHeight="10.0" prefHeight="82.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <Label text="ที่อยู่ :" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+                              <Label text="ที่อยู่:" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
                                  <font>
-                                    <Font name="Arial" size="16.0" />
+                                    <Font name="Arial Bold" size="16.0" />
                                  </font>
                                  <GridPane.margin>
                                     <Insets />
                                  </GridPane.margin>
                               </Label>
-                              <Label text="เบอร์โทร" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                              <Label text="เบอร์โทร:" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                 <font>
+                                    <Font name="Arial Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label text="104/213 หมู่ 1 แขวงจอมทอง เขตจอมทอง กทม. 10150" GridPane.columnIndex="1" GridPane.valignment="TOP">
+                                 <font>
+                                    <Font name="Arial" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="156.0" layoutY="10.0" text="082-337-0854" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
                                  <font>
                                     <Font name="Arial" size="16.0" />
                                  </font>
                               </Label>
                            </children>
                            <GridPane.margin>
-                              <Insets top="20.0" />
+                              <Insets top="70.0" />
                            </GridPane.margin>
                         </GridPane>
+                        <GridPane fx:id="data3" hgap="20.0" layoutX="20.0" layoutY="246.0" prefHeight="214.0" prefWidth="542.0" visible="false" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <children>
+                              <Label text="วินัยจราจร:" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+                                 <font>
+                                    <Font name="Arial Bold" size="16.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label text="สถานะใบขับขี่:" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                 <font>
+                                    <Font name="Arial Bold" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label text="ดี" GridPane.columnIndex="1" GridPane.valignment="TOP">
+                                 <font>
+                                    <Font name="Arial" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="257.0" layoutY="10.0" text="หมดอายุ" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                                 <font>
+                                    <Font name="Arial" size="16.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="235.0" minWidth="10.0" prefWidth="227.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="314.0" minWidth="10.0" prefWidth="148.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="102.0" minHeight="10.0" prefHeight="84.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="146.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <GridPane.margin>
+                              <Insets top="70.0" />
+                           </GridPane.margin>
+                        </GridPane>
+                        <Text fx:id="result" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="ไม่พบข้อมูล" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                           <font>
+                              <Font name="Arial Bold" size="18.0" />
+                           </font>
+                        </Text>
                      </children>
                   </GridPane>
                </children>
@@ -278,13 +356,8 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button mnemonicParsing="false" prefWidth="200.0" text="กลับหน้าแรก " />
-                  <Button mnemonicParsing="false" prefWidth="200.0" text="ย้อนกลับ" GridPane.columnIndex="2">
-                     <GridPane.margin>
-                        <Insets />
-                     </GridPane.margin>
-                  </Button>
-                  <Button mnemonicParsing="false" prefWidth="200.0" text="ขั้นตอนต่อไป " GridPane.columnIndex="3" />
+                  <Button fx:id="btn_home" mnemonicParsing="false" prefWidth="200.0" text="กลับหน้าแรก " />
+                  <Button fx:id="btn_next" mnemonicParsing="false" onAction="#goToHistory" prefWidth="200.0" text="ขั้นตอนต่อไป " GridPane.columnIndex="3" />
                </children>
             </GridPane>
          </children>

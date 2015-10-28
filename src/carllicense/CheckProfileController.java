@@ -61,6 +61,16 @@ public class CheckProfileController implements Initializable {
 
     @FXML
     private void searchId(ActionEvent event) {
+        String id = search.getText();
+        String b_id = "1101500764377";
+        data_btn.setVisible(id.equals(b_id));
+        data_bg1.setVisible(id.equals(b_id));
+        data_bg2.setVisible(id.equals(b_id));
+        data_bg3.setVisible(id.equals(b_id));
+        data1.setVisible(id.equals(b_id));
+        data2.setVisible(id.equals(b_id));
+        data3.setVisible(id.equals(b_id));
+        result.setVisible(!id.equals(b_id) || id == null);
     }
 
     @FXML
