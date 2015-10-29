@@ -75,6 +75,9 @@ public class CheckProfileController implements Initializable {
         data1.setVisible(id.equals(b_id));
         data2.setVisible(id.equals(b_id));
         data3.setVisible(id.equals(b_id));
+        if(!id.equals(b_id)){
+            result.setText("ไม่พบข้อมูล");
+        }
         result.setVisible(!id.equals(b_id) || id == null);
     }
 

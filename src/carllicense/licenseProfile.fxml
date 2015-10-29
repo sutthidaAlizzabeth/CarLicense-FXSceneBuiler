@@ -63,12 +63,12 @@
                               <Font name="Arial" size="18.0" />
                            </font>
                         </Label>
-                        <TextField prefHeight="33.0" prefWidth="200.0" text="1101500764377" GridPane.columnIndex="1">
+                        <TextField fx:id="search" prefHeight="33.0" prefWidth="200.0" promptText="1234567890123" text="1101500764377" GridPane.columnIndex="1">
                            <font>
                               <Font name="Arial" size="18.0" />
                            </font>
                         </TextField>
-                        <Button mnemonicParsing="false" text="แสดงประวัติ" GridPane.columnIndex="2">
+                        <Button fx:id="btn_search" mnemonicParsing="false" onAction="#searchId" text="แสดงประวัติ" GridPane.columnIndex="2">
                            <font>
                               <Font name="Arial" size="18.0" />
                            </font>
@@ -119,7 +119,7 @@
                       <RowConstraints maxHeight="314.0" minHeight="10.0" prefHeight="294.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <GridPane hgap="25.0" GridPane.columnSpan="2">
+                        <GridPane fx:id="data_1" hgap="25.0" GridPane.columnSpan="2">
                           <columnConstraints>
                             <ColumnConstraints hgrow="SOMETIMES" maxWidth="751.9999694824219" minWidth="10.0" prefWidth="583.3333129882812" />
                             <ColumnConstraints hgrow="SOMETIMES" maxWidth="484.0000305175781" minWidth="10.0" prefWidth="360.66668701171875" />
@@ -189,15 +189,21 @@
                                     <RowConstraints maxHeight="222.0" minHeight="0.0" prefHeight="41.0" vgrow="SOMETIMES" />
                                     <RowConstraints maxHeight="222.0" minHeight="10.0" prefHeight="56.0" vgrow="SOMETIMES" />
                                  </rowConstraints>
+                                 <GridPane.margin>
+                                    <Insets />
+                                 </GridPane.margin>
                               </GridPane>
                               <ImageView fitHeight="160.0" fitWidth="180.0" pickOnBounds="true" GridPane.columnIndex="1">
                                  <image>
                                     <Image url="@116833916%20(1).jpg" />
                                  </image>
+                                 <GridPane.margin>
+                                    <Insets left="70.0" />
+                                 </GridPane.margin>
                               </ImageView>
                            </children>
                         </GridPane>
-                        <GridPane hgap="20.0" style="-fx-background-color: #faf2f1;" GridPane.columnSpan="2" GridPane.rowIndex="1">
+                        <GridPane fx:id="data_2" hgap="20.0" style="-fx-background-color: #faf2f1;" GridPane.columnSpan="2" GridPane.rowIndex="1">
                           <columnConstraints>
                             <ColumnConstraints hgrow="SOMETIMES" maxWidth="707.9999694824219" minWidth="10.0" prefWidth="310.6666564941406" />
                             <ColumnConstraints hgrow="SOMETIMES" maxWidth="633.3333435058594" minWidth="10.0" prefWidth="633.3333435058594" />
@@ -231,8 +237,35 @@
                                           <Font name="Arial" size="16.0" />
                                        </font>
                                     </Label>
-                                    <ComboBox prefWidth="200.0" GridPane.columnIndex="1" />
+                                    <MenuButton focusTraversable="false" mnemonicParsing="false" prefWidth="280.0" text="ใบอนุญาตขับรถยนต์ชั่วคราว" GridPane.columnIndex="1">
+                                      <items>
+                                          <MenuItem fx:id="li_car_time" mnemonicParsing="false" onAction="#li_car_time" text="ใบอนุญาติขับรถยนต์ชั่วคราว" />
+                                          <MenuItem fx:id="li_trycycle_time" disable="true" mnemonicParsing="false" onAction="#li_trycycle_time" text="ใบอนุญาติขับรถยนต์สามล้อชั่วคราว" />
+                                          <MenuItem fx:id="li_moter_time" disable="true" mnemonicParsing="false" onAction="#li_moter_time" text="ใบอนุญาติขับรถจักรยานยนต์ส่วนบุคคลชั่วคราว" />
+                                          <SeparatorMenuItem mnemonicParsing="false" />
+                                          <MenuItem fx:id="li_car" disable="true" mnemonicParsing="false" onAction="#li_car" text="ใบอนุญาตขับรถยนต์ส่วนบุคคล" />
+                                          <MenuItem fx:id="li_trycycle" disable="true" mnemonicParsing="false" onAction="#li_trycycle" text="ใบอนุญาตขับรถยนต์สามล้อส่วนบุคคล" />
+                                          <MenuItem fx:id="li_moter" disable="true" mnemonicParsing="false" onAction="#li_moter" text="ใบอนุญาตขับรถจักรยานยนต์ส่วนบุคคล" />
+                                          <SeparatorMenuItem mnemonicParsing="false" />
+                                          <MenuItem fx:id="li_car_public" disable="true" mnemonicParsing="false" onAction="#li_car_public" text="ใบอนุญาตขับรถยนต์สาธารณะ" />
+                                          <MenuItem fx:id="li_trycycle_public" disable="true" mnemonicParsing="false" onAction="#li_trycycle_public" text="ใบอนุญาตขับรถยนต์สามล้อสาธารณะ" />
+                                          <MenuItem fx:id="li_moter_public" disable="true" mnemonicParsing="false" onAction="#li_moter_public" text="ใบอนุญาตขับรถจักรยานยนต์สาธารณะ" />
+                                          <SeparatorMenuItem mnemonicParsing="false" />
+                                          <MenuItem fx:id="li_road" disable="true" mnemonicParsing="false" onAction="#li_road" text="ใบอนุญาตขับรถบดถนน" />
+                                          <MenuItem fx:id="li_track" disable="true" mnemonicParsing="false" onAction="#li_track" text="ใบอนุญาตขับรถแทรกเตอร์" />
+                                          <SeparatorMenuItem mnemonicParsing="false" />
+                                          <MenuItem fx:id="li_other" disable="true" mnemonicParsing="false" onAction="#li_other" text="ใบอนุญาตขับรถชนิดอื่น" />
+                                          <SeparatorMenuItem mnemonicParsing="false" />
+                                          <MenuItem fx:id="li_foriegn" disable="true" mnemonicParsing="false" onAction="#li_foriegn" text="ใบอนุญาตขับรถระหว่างประเทศ" />
+                                      </items>
+                                       <GridPane.margin>
+                                          <Insets left="10.0" />
+                                       </GridPane.margin>
+                                    </MenuButton>
                                  </children>
+                                 <GridPane.margin>
+                                    <Insets top="10.0" />
+                                 </GridPane.margin>
                               </GridPane>
                               <Label text="ฉบับที่ :" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
                                  <font>
@@ -254,7 +287,7 @@
                                     <Font name="Arial" size="16.0" />
                                  </font>
                               </Label>
-                              <Label text="รถยนตร์ส่วนบุคคล" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                              <Label text="ใบอนุญาตขับรถยนต์ชั่วคราว" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                  <font>
                                     <Font name="Arial" size="16.0" />
                                  </font>
@@ -269,17 +302,25 @@
                                     <Font name="Arial" size="16.0" />
                                  </font>
                               </Label>
-                              <Label text="พฤษจิกายน, 11 2558" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                              <Label text="1 พฤศจิกายน 2558" GridPane.columnIndex="1" GridPane.rowIndex="4">
                                  <font>
                                     <Font name="Arial" size="16.0" />
                                  </font>
                               </Label>
-                              <Label text="พฤษจิกายน, 11 2559" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                              <Label text="1 พฤศจิกายน 2559" GridPane.columnIndex="1" GridPane.rowIndex="5">
                                  <font>
                                     <Font name="Arial" size="16.0" />
                                  </font>
                               </Label>
+                              <Text fx:id="result" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="ไม่พบข้อมูล" visible="false" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font name="Arial Bold" size="16.0" />
+                                 </font>
+                              </Text>
                            </children>
+                           <GridPane.margin>
+                              <Insets />
+                           </GridPane.margin>
                         </GridPane>
                      </children>
                   </GridPane>

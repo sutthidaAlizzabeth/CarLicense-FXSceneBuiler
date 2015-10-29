@@ -152,10 +152,10 @@
                               <ColumnConstraints halignment="LEFT" hgrow="SOMETIMES" maxWidth="306.0" minWidth="10.0" prefWidth="306.0" />
                           </columnConstraints>
                           <rowConstraints>
-                            <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="49.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
                               <RowConstraints maxHeight="44.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
-                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
                               <ImageView fitHeight="160.0" fitWidth="150.0" pickOnBounds="true" GridPane.columnIndex="4" GridPane.rowSpan="4">
@@ -266,11 +266,11 @@
                             <ColumnConstraints hgrow="SOMETIMES" maxWidth="403.0" minWidth="10.0" prefWidth="403.0" />
                           </columnConstraints>
                           <rowConstraints>
-                            <RowConstraints maxHeight="102.0" minHeight="10.0" prefHeight="82.0" vgrow="SOMETIMES" />
-                            <RowConstraints maxHeight="146.0" minHeight="10.0" prefHeight="82.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="102.0" minHeight="10.0" prefHeight="44.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="146.0" minHeight="10.0" prefHeight="123.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <Label text="ที่อยู่:" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+                              <Label text="ที่อยู่:" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
                                  <font>
                                     <Font name="Arial Bold" size="16.0" />
                                  </font>
@@ -278,17 +278,17 @@
                                     <Insets />
                                  </GridPane.margin>
                               </Label>
-                              <Label text="เบอร์โทร:" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                              <Label text="เบอร์โทร:" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
                                  <font>
                                     <Font name="Arial Bold" size="16.0" />
                                  </font>
                               </Label>
-                              <Label text="104/213 หมู่ 1 แขวงจอมทอง เขตจอมทอง กทม. 10150" GridPane.columnIndex="1" GridPane.valignment="TOP">
+                              <Label text="104/213 หมู่ 1 แขวงจอมทอง เขตจอมทอง กทม. 10150" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
                                  <font>
                                     <Font name="Arial" size="16.0" />
                                  </font>
                               </Label>
-                              <Label layoutX="156.0" layoutY="10.0" text="082-337-0854" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
+                              <Label layoutX="156.0" layoutY="10.0" text="082-337-0854" GridPane.columnIndex="1" GridPane.valignment="TOP">
                                  <font>
                                     <Font name="Arial" size="16.0" />
                                  </font>
@@ -329,14 +329,14 @@
                               <ColumnConstraints hgrow="SOMETIMES" maxWidth="314.0" minWidth="10.0" prefWidth="148.0" />
                            </columnConstraints>
                            <rowConstraints>
-                              <RowConstraints maxHeight="102.0" minHeight="10.0" prefHeight="84.0" vgrow="SOMETIMES" />
-                              <RowConstraints maxHeight="146.0" minHeight="10.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="102.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="146.0" minHeight="10.0" prefHeight="122.0" vgrow="SOMETIMES" />
                            </rowConstraints>
                            <GridPane.margin>
                               <Insets top="70.0" />
                            </GridPane.margin>
                         </GridPane>
-                        <Text fx:id="result" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="ไม่พบข้อมูล" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+                        <Text fx:id="result" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="กรุณากรอกรหัสประจำตัวประชาชน" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                            <font>
                               <Font name="Arial Bold" size="18.0" />
                            </font>
