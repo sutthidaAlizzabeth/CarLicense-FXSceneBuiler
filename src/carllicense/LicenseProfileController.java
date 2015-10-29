@@ -17,6 +17,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.text.Text;
 import javafx.stage.Stage;
@@ -27,7 +28,7 @@ import javafx.stage.Stage;
  * @author Predator
  */
 public class LicenseProfileController implements Initializable {
-    private Button btn_profile;
+
     @FXML
     private Button btn_home;
     @FXML
@@ -66,6 +67,8 @@ public class LicenseProfileController implements Initializable {
     private GridPane data_2;
     @FXML
     private Text result;
+    @FXML
+    private Button btn_pre;
 
     /**
      * Initializes the controller class.
@@ -79,7 +82,7 @@ public class LicenseProfileController implements Initializable {
     private void goToProfile(ActionEvent event) throws IOException {
         Parent page = FXMLLoader.load(getClass().getResource("checkProfile.fxml"));
         Scene scene = new Scene(page);
-        Stage stage = (Stage) btn_profile.getScene().getWindow();
+        Stage stage = (Stage) btn_pre.getScene().getWindow();
         stage.setScene(scene);
         stage.show();
     }
@@ -88,7 +91,7 @@ public class LicenseProfileController implements Initializable {
     private void goToHome(ActionEvent event) throws IOException {
         Parent page = FXMLLoader.load(getClass().getResource("menuSelect.fxml"));
         Scene scene = new Scene(page);
-        Stage stage = (Stage) btn_profile.getScene().getWindow();
+        Stage stage = (Stage) btn_home.getScene().getWindow();
         stage.setScene(scene);
         stage.show();
     }
@@ -153,5 +156,5 @@ public class LicenseProfileController implements Initializable {
     @FXML
     private void li_foriegn(ActionEvent event) {
     }
-    
+
 }

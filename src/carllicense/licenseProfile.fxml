@@ -120,9 +120,9 @@
                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                      </rowConstraints>
                   </GridPane>
-                  <GridPane style="-fx-background-color: #3f92d2;">
+                  <GridPane onMouseClicked="#goToProfile" style="-fx-background-color: #3f92d2;">
                      <children>
-                        <Text fill="#f5f5f559" strokeType="OUTSIDE" strokeWidth="0.0" text="1. ตรวจประวัติ" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                        <Text fill="#f5f5f559" onMouseClicked="#goToProfile" strokeType="OUTSIDE" strokeWidth="0.0" text="1. ตรวจประวัติ" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                            <font>
                               <Font name="Arial" size="18.0" />
                            </font>
@@ -351,16 +351,16 @@
                                     <Font name="Arial" size="16.0" />
                                  </font>
                               </Label>
-                              <Text fx:id="result" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="ไม่พบข้อมูล" visible="false" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
-                                 <font>
-                                    <Font name="Arial Bold" size="16.0" />
-                                 </font>
-                              </Text>
                            </children>
                            <GridPane.margin>
                               <Insets />
                            </GridPane.margin>
                         </GridPane>
+                        <Text fx:id="result" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="ไม่พบข้อมูล" visible="false" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowSpan="2" GridPane.valignment="CENTER">
+                           <font>
+                              <Font name="Arial Bold" size="16.0" />
+                           </font>
+                        </Text>
                      </children>
                   </GridPane>
                </children>
@@ -380,7 +380,7 @@
               </rowConstraints>
                <children>
                   <Button fx:id="btn_home" mnemonicParsing="false" onAction="#goToHome" prefWidth="200.0" text="กลับหน้าแรก " />
-                  <Button mnemonicParsing="false" onAction="#goToProfile" prefWidth="200.0" text="ย้อนกลับ" GridPane.columnIndex="2">
+                  <Button fx:id="btn_pre" mnemonicParsing="false" onAction="#goToProfile" prefWidth="200.0" text="ย้อนกลับ" GridPane.columnIndex="2">
                      <GridPane.margin>
                         <Insets />
                      </GridPane.margin>

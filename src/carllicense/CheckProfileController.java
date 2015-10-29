@@ -16,6 +16,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.scene.shape.Rectangle;
 import javafx.scene.text.Text;
@@ -31,18 +32,12 @@ public class CheckProfileController implements Initializable {
     private TextField search;
     @FXML
     private Button btn_search;
-    private Rectangle data_bg1;
-    private Rectangle data_bg2;
     @FXML
     private Button data_btn;
     @FXML
     private GridPane data1;
     @FXML
     private GridPane data2;
-    @FXML
-    private GridPane data3;
-    private Rectangle data_bg3;
-    private Button btn_history;
     @FXML
     private Button btn_home;
     @FXML
@@ -63,12 +58,8 @@ public class CheckProfileController implements Initializable {
         String id = search.getText();
         String b_id = "1101500764377";
         data_btn.setVisible(id.equals(b_id));
-        data_bg1.setVisible(id.equals(b_id));
-        data_bg2.setVisible(id.equals(b_id));
-        data_bg3.setVisible(id.equals(b_id));
         data1.setVisible(id.equals(b_id));
         data2.setVisible(id.equals(b_id));
-        data3.setVisible(id.equals(b_id));
         if(!id.equals(b_id)){
             result.setText("ไม่พบข้อมูล");
         }
@@ -80,7 +71,7 @@ public class CheckProfileController implements Initializable {
     private void goToHistory(ActionEvent event) throws IOException {
         Parent page = FXMLLoader.load(getClass().getResource("licenseProfile.fxml"));
         Scene scene = new Scene(page);
-        Stage stage = (Stage) btn_history.getScene().getWindow();
+        Stage stage = (Stage) btn_next.getScene().getWindow();
         stage.setScene(scene);
         stage.show();
     }
@@ -92,6 +83,5 @@ public class CheckProfileController implements Initializable {
         Stage stage = (Stage) btn_home.getScene().getWindow();
         stage.setScene(scene);
         stage.show();
-    }
-    
+    }    
 }
