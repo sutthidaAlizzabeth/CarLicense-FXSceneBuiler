@@ -31,9 +31,7 @@ public class CheckProfileController implements Initializable {
     private TextField search;
     @FXML
     private Button btn_search;
-    @FXML
     private Rectangle data_bg1;
-    @FXML
     private Rectangle data_bg2;
     @FXML
     private Button data_btn;
@@ -43,11 +41,7 @@ public class CheckProfileController implements Initializable {
     private GridPane data2;
     @FXML
     private GridPane data3;
-    @FXML
     private Rectangle data_bg3;
-    @FXML
-    private Button btn_license;
-    @FXML
     private Button btn_history;
     @FXML
     private Button btn_home;
@@ -81,9 +75,6 @@ public class CheckProfileController implements Initializable {
         result.setVisible(!id.equals(b_id) || id == null);
     }
 
-    @FXML
-    private void goToLicense(ActionEvent event) {
-    }
 
     @FXML
     private void goToHistory(ActionEvent event) throws IOException {

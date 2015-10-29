@@ -27,7 +27,6 @@ import javafx.stage.Stage;
  * @author Predator
  */
 public class LicenseProfileController implements Initializable {
-    @FXML
     private Button btn_profile;
     @FXML
     private Button btn_home;

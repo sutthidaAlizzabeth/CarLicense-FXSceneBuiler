@@ -80,7 +80,7 @@
                   </GridPane>
                </children>
             </GridPane>
-            <GridPane GridPane.rowIndex="1">
+            <GridPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" GridPane.rowIndex="1">
               <columnConstraints>
                 <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                   <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -90,12 +90,51 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button mnemonicParsing="false" prefWidth="200.0" text="3. บันทึกการทำใบขับขี่ " GridPane.columnIndex="2" />
-                  <Button mnemonicParsing="false" prefWidth="200.0" text="2. ประวัติการทำใบขับขี่ " GridPane.columnIndex="1">
-                     <font>
-                        <Font name="System Bold" size="13.0" />
-                     </font></Button>
-                  <Button fx:id="btn_profile" mnemonicParsing="false" onAction="#goToProfile" prefWidth="200.0" text="1. ตรวจสอบประวัติ" />
+                  <GridPane style="-fx-background-color: #3f92d2;" GridPane.columnIndex="2">
+                     <children>
+                        <Text fill="#ffffff5a" strokeType="OUTSIDE" strokeWidth="0.0" text="3. บันทึกการทำใบขับขี่" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane style="-fx-background-color: #3f92d2;" GridPane.columnIndex="1">
+                     <children>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="2. ประวัติใบขับขี่" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+                  <GridPane style="-fx-background-color: #3f92d2;">
+                     <children>
+                        <Text fill="#f5f5f559" strokeType="OUTSIDE" strokeWidth="0.0" text="1. ตรวจประวัติ" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </Text>
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
                </children>
             </GridPane>
             <GridPane style="-fx-background-color: #d7ddeb;" GridPane.rowIndex="2">
