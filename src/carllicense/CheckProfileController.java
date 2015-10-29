@@ -83,7 +83,12 @@ public class CheckProfileController implements Initializable {
     }
 
     @FXML
-    private void goToHistory(ActionEvent event) {
+    private void goToHistory(ActionEvent event) throws IOException {
+        Parent page = FXMLLoader.load(getClass().getResource("licenseProfile.fxml"));
+        Scene scene = new Scene(page);
+        Stage stage = (Stage) btn_history.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
