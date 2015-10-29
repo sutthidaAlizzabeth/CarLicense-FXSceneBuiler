@@ -91,9 +91,9 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button fx:id="btn_license" mnemonicParsing="false" onAction="#goToLicense" prefWidth="200.0" text="3 บันทึกการทำใบขับขี่ " GridPane.columnIndex="2" />
-                  <Button fx:id="btn_history" mnemonicParsing="false" onAction="#goToHistory" prefWidth="200.0" text="2 ประวัติการทำใบขับขี่ " GridPane.columnIndex="1" />
-                  <Button mnemonicParsing="false" prefWidth="200.0" text="1 ตรวจสอบประวัติ">
+                  <Button fx:id="btn_license" mnemonicParsing="false" onAction="#goToLicense" prefWidth="200.0" text="3. บันทึกการทำใบขับขี่ " GridPane.columnIndex="2" />
+                  <Button fx:id="btn_history" mnemonicParsing="false" onAction="#goToHistory" prefWidth="200.0" text="2. ประวัติการทำใบขับขี่ " GridPane.columnIndex="1" />
+                  <Button mnemonicParsing="false" prefWidth="200.0" text="1. ตรวจสอบประวัติ">
                      <font>
                         <Font name="System Bold" size="13.0" />
                      </font></Button>

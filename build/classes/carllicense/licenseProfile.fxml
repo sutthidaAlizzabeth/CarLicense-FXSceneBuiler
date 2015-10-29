@@ -63,7 +63,7 @@
                               <Font name="Arial" size="18.0" />
                            </font>
                         </Label>
-                        <TextField prefHeight="33.0" prefWidth="200.0" promptText="1234567890123" GridPane.columnIndex="1">
+                        <TextField prefHeight="33.0" prefWidth="200.0" text="1101500764377" GridPane.columnIndex="1">
                            <font>
                               <Font name="Arial" size="18.0" />
                            </font>
@@ -72,6 +72,9 @@
                            <font>
                               <Font name="Arial" size="18.0" />
                            </font>
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
                         </Button>
                      </children>
                   </GridPane>
@@ -87,9 +90,9 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button mnemonicParsing="false" prefWidth="200.0" text="3 บันทึกการทำใบขับขี่ " GridPane.columnIndex="2" />
-                  <Button mnemonicParsing="false" prefWidth="200.0" text="2 ประวัติการทำใบขับขี่ " GridPane.columnIndex="1" />
-                  <Button fx:id="btn_profile" mnemonicParsing="false" onAction="#goToProfile" prefWidth="200.0" text="1 ตรวจสอบประวัติ" />
+                  <Button mnemonicParsing="false" prefWidth="200.0" text="3. บันทึกการทำใบขับขี่ " GridPane.columnIndex="2" />
+                  <Button mnemonicParsing="false" prefWidth="200.0" text="2. ประวัติการทำใบขับขี่ " GridPane.columnIndex="1" />
+                  <Button fx:id="btn_profile" mnemonicParsing="false" onAction="#goToProfile" prefWidth="200.0" text="1. ตรวจสอบประวัติ" />
                </children>
             </GridPane>
             <GridPane style="-fx-background-color: #d7ddeb;" GridPane.rowIndex="2">
