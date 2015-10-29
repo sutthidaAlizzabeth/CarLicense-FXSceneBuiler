@@ -157,4 +157,8 @@ public class LicenseProfileController implements Initializable {
     private void li_foriegn(ActionEvent event) {
     }
 
+    @FXML
+    private void goToProfile(MouseEvent event) {
+    }
+
 }
