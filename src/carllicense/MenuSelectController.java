@@ -28,6 +28,10 @@ public class MenuSelectController implements Initializable {
     private MenuItem exit;
     @FXML
     private Button btn_profile;
+    @FXML
+    private Button btn_report;
+    @FXML
+    private Button btn_logout;
 
     /**
      * Initializes the controller class.
@@ -47,6 +51,15 @@ public class MenuSelectController implements Initializable {
         Parent page = FXMLLoader.load(getClass().getResource("checkProfile.fxml"));
         Scene scene = new Scene(page);
         Stage stage = (Stage) btn_profile.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    private void logout(ActionEvent event) throws IOException {
+        Parent page = FXMLLoader.load(getClass().getResource("index.fxml"));
+        Scene scene = new Scene(page);
+        Stage stage = (Stage) btn_logout.getScene().getWindow();
         stage.setScene(scene);
         stage.show();
     }
