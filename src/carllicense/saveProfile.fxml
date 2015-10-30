@@ -9,7 +9,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" depthTest="DISABLE" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carllicense.SaveProfileController">
+<AnchorPane id="AnchorPane" depthTest="DISABLE" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carllicense.licenseController">
    <children>
       <MenuBar prefHeight="29.0" prefWidth="1024.0">
          <menus>
@@ -58,24 +58,11 @@
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <Label text="รหัสประจำตัวประชาชน: " GridPane.halignment="RIGHT">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="รหัสประจำตัวประชาชน  1101500764377" GridPane.columnIndex="1" GridPane.valignment="BOTTOM">
                            <font>
-                              <Font name="Arial" size="18.0" />
+                              <Font name="Arial Bold" size="18.0" />
                            </font>
-                        </Label>
-                        <TextField prefHeight="33.0" prefWidth="200.0" promptText="1234567890123" GridPane.columnIndex="1">
-                           <font>
-                              <Font name="Arial" size="18.0" />
-                           </font>
-                        </TextField>
-                        <Button mnemonicParsing="false" text="แสดงประวัติ" GridPane.columnIndex="2">
-                           <font>
-                              <Font name="Arial" size="18.0" />
-                           </font>
-                           <GridPane.margin>
-                              <Insets left="10.0" />
-                           </GridPane.margin>
-                        </Button>
+                        </Text>
                      </children>
                   </GridPane>
                </children>
