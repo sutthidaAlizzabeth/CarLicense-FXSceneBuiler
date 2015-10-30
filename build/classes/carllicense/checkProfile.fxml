@@ -59,17 +59,20 @@
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <Label text="รหัสประจำตัวประชาชน : " GridPane.halignment="RIGHT">
+                        <Label text="รหัสประจำตัวประชาชน : " GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM">
                            <font>
                               <Font name="Arial" size="18.0" />
                            </font>
+                           <GridPane.margin>
+                              <Insets bottom="5.0" />
+                           </GridPane.margin>
                         </Label>
-                        <TextField fx:id="search" prefHeight="33.0" prefWidth="200.0" promptText="1234567890123" GridPane.columnIndex="1">
+                        <TextField fx:id="search" prefHeight="33.0" prefWidth="200.0" promptText="1234567890123" GridPane.columnIndex="1" GridPane.valignment="BOTTOM">
                            <font>
                               <Font name="Arial" size="18.0" />
                            </font>
                         </TextField>
-                        <Button fx:id="btn_search" mnemonicParsing="false" onAction="#searchId" text="แสดงประวัติ" GridPane.columnIndex="2">
+                        <Button fx:id="btn_search" mnemonicParsing="false" onAction="#searchId" text="แสดงประวัติ" GridPane.columnIndex="2" GridPane.valignment="BOTTOM">
                            <font>
                               <Font name="Arial" size="18.0" />
                            </font>
@@ -114,7 +117,7 @@
                   </GridPane>
                   <GridPane layoutX="10.0" layoutY="10.0" onMouseClicked="#goToHistory" style="-fx-background-color: #3f92d2;" GridPane.columnIndex="1">
                      <children>
-                        <Text fill="#f5f5f559" onMouseClicked="#goToHistory" strokeType="OUTSIDE" strokeWidth="0.0" text="2. ประวัติใบขับขี่" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                        <Text fill="#f5f5f559" strokeType="OUTSIDE" strokeWidth="0.0" text="2. ประวัติใบขับขี่" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                            <font>
                               <Font name="Arial" size="18.0" />
                            </font>

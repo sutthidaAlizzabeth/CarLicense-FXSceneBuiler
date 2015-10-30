@@ -265,24 +265,24 @@
                                     </Label>
                                     <MenuButton focusTraversable="false" mnemonicParsing="false" prefWidth="280.0" text="ใบอนุญาตขับรถยนต์ชั่วคราว" GridPane.columnIndex="1">
                                       <items>
-                                          <MenuItem fx:id="li_car_time" mnemonicParsing="false" onAction="#li_car_time" text="ใบอนุญาติขับรถยนต์ชั่วคราว" />
-                                          <MenuItem fx:id="li_trycycle_time" disable="true" mnemonicParsing="false" onAction="#li_trycycle_time" text="ใบอนุญาติขับรถยนต์สามล้อชั่วคราว" />
-                                          <MenuItem fx:id="li_moter_time" disable="true" mnemonicParsing="false" onAction="#li_moter_time" text="ใบอนุญาติขับรถจักรยานยนต์ส่วนบุคคลชั่วคราว" />
+                                          <MenuItem mnemonicParsing="false" onAction="#li_car_time" text="ใบอนุญาติขับรถยนต์ชั่วคราว" />
+                                          <MenuItem disable="true" mnemonicParsing="false" onAction="#li_trycycle_time" text="ใบอนุญาติขับรถยนต์สามล้อชั่วคราว" />
+                                          <MenuItem disable="true" mnemonicParsing="false" onAction="#li_moter_time" text="ใบอนุญาติขับรถจักรยานยนต์ส่วนบุคคลชั่วคราว" />
                                           <SeparatorMenuItem mnemonicParsing="false" />
-                                          <MenuItem fx:id="li_car" disable="true" mnemonicParsing="false" onAction="#li_car" text="ใบอนุญาตขับรถยนต์ส่วนบุคคล" />
-                                          <MenuItem fx:id="li_trycycle" disable="true" mnemonicParsing="false" onAction="#li_trycycle" text="ใบอนุญาตขับรถยนต์สามล้อส่วนบุคคล" />
-                                          <MenuItem fx:id="li_moter" disable="true" mnemonicParsing="false" onAction="#li_moter" text="ใบอนุญาตขับรถจักรยานยนต์ส่วนบุคคล" />
+                                          <MenuItem disable="true" mnemonicParsing="false" onAction="#li_car" text="ใบอนุญาตขับรถยนต์ส่วนบุคคล" />
+                                          <MenuItem disable="true" mnemonicParsing="false" onAction="#li_trycycle" text="ใบอนุญาตขับรถยนต์สามล้อส่วนบุคคล" />
+                                          <MenuItem disable="true" mnemonicParsing="false" onAction="#li_moter" text="ใบอนุญาตขับรถจักรยานยนต์ส่วนบุคคล" />
                                           <SeparatorMenuItem mnemonicParsing="false" />
-                                          <MenuItem fx:id="li_car_public" disable="true" mnemonicParsing="false" onAction="#li_car_public" text="ใบอนุญาตขับรถยนต์สาธารณะ" />
-                                          <MenuItem fx:id="li_trycycle_public" disable="true" mnemonicParsing="false" onAction="#li_trycycle_public" text="ใบอนุญาตขับรถยนต์สามล้อสาธารณะ" />
-                                          <MenuItem fx:id="li_moter_public" disable="true" mnemonicParsing="false" onAction="#li_moter_public" text="ใบอนุญาตขับรถจักรยานยนต์สาธารณะ" />
+                                          <MenuItem disable="true" mnemonicParsing="false" onAction="#li_car_public" text="ใบอนุญาตขับรถยนต์สาธารณะ" />
+                                          <MenuItem disable="true" mnemonicParsing="false" onAction="#li_trycycle_public" text="ใบอนุญาตขับรถยนต์สามล้อสาธารณะ" />
+                                          <MenuItem disable="true" mnemonicParsing="false" onAction="#li_moter_public" text="ใบอนุญาตขับรถจักรยานยนต์สาธารณะ" />
                                           <SeparatorMenuItem mnemonicParsing="false" />
-                                          <MenuItem fx:id="li_road" disable="true" mnemonicParsing="false" onAction="#li_road" text="ใบอนุญาตขับรถบดถนน" />
-                                          <MenuItem fx:id="li_track" disable="true" mnemonicParsing="false" onAction="#li_track" text="ใบอนุญาตขับรถแทรกเตอร์" />
+                                          <MenuItem disable="true" mnemonicParsing="false" onAction="#li_road" text="ใบอนุญาตขับรถบดถนน" />
+                                          <MenuItem disable="true" mnemonicParsing="false" onAction="#li_track" text="ใบอนุญาตขับรถแทรกเตอร์" />
                                           <SeparatorMenuItem mnemonicParsing="false" />
-                                          <MenuItem fx:id="li_other" disable="true" mnemonicParsing="false" onAction="#li_other" text="ใบอนุญาตขับรถชนิดอื่น" />
+                                          <MenuItem disable="true" mnemonicParsing="false" onAction="#li_other" text="ใบอนุญาตขับรถชนิดอื่น" />
                                           <SeparatorMenuItem mnemonicParsing="false" />
-                                          <MenuItem fx:id="li_foriegn" disable="true" mnemonicParsing="false" onAction="#li_foriegn" text="ใบอนุญาตขับรถระหว่างประเทศ" />
+                                          <MenuItem disable="true" mnemonicParsing="false" onAction="#li_foriegn" text="ใบอนุญาตขับรถระหว่างประเทศ" />
                                       </items>
                                        <GridPane.margin>
                                           <Insets left="10.0" />
@@ -372,7 +372,7 @@
                         <Insets />
                      </GridPane.margin>
                   </Button>
-                  <Button mnemonicParsing="false" prefWidth="200.0" text="ขั้นตอนต่อไป " GridPane.columnIndex="3" />
+                  <Button fx:id="btn_next" mnemonicParsing="false" onAction="#goToLicense" prefWidth="200.0" text="ขั้นตอนต่อไป " GridPane.columnIndex="3" />
                </children>
             </GridPane>
          </children>

@@ -29,21 +29,28 @@ import javafx.stage.Stage;
  */
 public class licenseController implements Initializable{
     
+    @FXML
     private TextField search;
+    @FXML
+    private Button btn_search;
+    @FXML
     private Button data_btn;
+    @FXML
     private GridPane data1;
+    @FXML
     private GridPane data2;
     @FXML
+    private GridPane data_1;
+    @FXML
+    private GridPane data_2;
+    @FXML
     private Button btn_home;
+    @FXML
     private Button btn_next;
     @FXML
     private Text result;
     @FXML
     private Button btn_pre;
-    @FXML
-    private GridPane data_1;
-    @FXML
-    private GridPane data_2;
     @FXML
     private MenuItem li_car_time;
     @FXML
@@ -76,6 +83,7 @@ public class licenseController implements Initializable{
         // TODO
     }
     
+    @FXML
     private void searchId(ActionEvent event) {
         String id = search.getText();
         String b_id = "1101500764377";
@@ -88,6 +96,7 @@ public class licenseController implements Initializable{
         result.setVisible(!id.equals(b_id) || id == null);
     }
     
+    @FXML
     private void goToHistory(ActionEvent event) throws IOException {
         Parent page = FXMLLoader.load(getClass().getResource("licenseProfile.fxml"));
         Scene scene = new Scene(page);
@@ -122,61 +131,79 @@ public class licenseController implements Initializable{
         stage.setScene(scene);
         stage.show();
     }
-
+    
     @FXML
-    private void goToProfile(MouseEvent event) {
+    private void goToLicense(ActionEvent event) throws IOException {
+        Parent page = FXMLLoader.load(getClass().getResource("saveProfile.fxml"));
+        Scene scene = new Scene(page);
+        Stage stage = (Stage) btn_pre.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
     }
-
+    
     @FXML
     private void li_car_time(ActionEvent event) {
+ 
     }
 
     @FXML
     private void li_trycycle_time(ActionEvent event) {
+
     }
 
     @FXML
     private void li_moter_time(ActionEvent event) {
+        
     }
 
     @FXML
     private void li_car(ActionEvent event) {
+       
     }
 
     @FXML
     private void li_trycycle(ActionEvent event) {
+      
     }
 
     @FXML
     private void li_moter(ActionEvent event) {
+    
     }
 
     @FXML
     private void li_car_public(ActionEvent event) {
+        
     }
 
     @FXML
     private void li_trycycle_public(ActionEvent event) {
+        
     }
 
     @FXML
     private void li_moter_public(ActionEvent event) {
+        
     }
 
     @FXML
     private void li_road(ActionEvent event) {
+        
     }
 
     @FXML
     private void li_track(ActionEvent event) {
+        
     }
 
     @FXML
     private void li_other(ActionEvent event) {
+       
     }
 
     @FXML
     private void li_foriegn(ActionEvent event) {
+        
     }
  
 }

@@ -10,7 +10,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" depthTest="DISABLE" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carllicense.EditProfileController">
+<AnchorPane id="AnchorPane" depthTest="DISABLE" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carllicense.licenseController">
    <children>
       <MenuBar prefHeight="29.0" prefWidth="1024.0">
          <menus>
