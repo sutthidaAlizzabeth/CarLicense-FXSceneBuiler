@@ -424,13 +424,8 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button mnemonicParsing="false" prefWidth="200.0" text="กลับหน้าแรก " />
-                  <Button mnemonicParsing="false" prefWidth="200.0" text="ย้อนกลับ" GridPane.columnIndex="2">
-                     <GridPane.margin>
-                        <Insets />
-                     </GridPane.margin>
-                  </Button>
-                  <Button mnemonicParsing="false" prefWidth="200.0" text="ขั้นตอนต่อไป " GridPane.columnIndex="3" />
+                  <Button fx:id="btn_home" mnemonicParsing="false" onAction="#goToHome" prefWidth="200.0" text="กลับหน้าแรก " />
+                  <Button fx:id="btn_pre" mnemonicParsing="false" onAction="#goToHistory" prefWidth="200.0" text="ย้อนกลับ" GridPane.columnIndex="3" />
                </children>
             </GridPane>
          </children>

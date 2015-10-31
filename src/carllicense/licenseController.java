@@ -15,6 +15,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
@@ -77,6 +78,10 @@ public class licenseController implements Initializable{
     private MenuItem li_other;
     @FXML
     private MenuItem li_foriegn;
+    @FXML
+    private MenuButton transaction_type;
+    @FXML
+    private MenuButton license_type;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -142,68 +147,84 @@ public class licenseController implements Initializable{
     }
     
     @FXML
+    private void new_card(ActionEvent event) {
+        transaction_type.setText("ทำบัตรใหม่");
+    }
+
+    @FXML
+    private void re_card(ActionEvent event) {
+        transaction_type.setText("ทำบัตรทดแทน");
+    }
+
+    @FXML
+    private void continue_card(ActionEvent event) {
+        transaction_type.setText("ต่ออายุบัตร");
+    }
+    
+    @FXML
     private void li_car_time(ActionEvent event) {
+        license_type.setText("ใบอนุญาติขับรถยนต์ชั่วคราว");
  
     }
 
     @FXML
     private void li_trycycle_time(ActionEvent event) {
-
+        license_type.setText("ใบอนุญาติขับรถยนต์สามล้อชั่วคราว");
     }
 
     @FXML
     private void li_moter_time(ActionEvent event) {
-        
+        license_type.setText("ใบอนุญาติขับรถจักรยานยนต์ส่วนบุคคลชั่วคราว");
     }
 
     @FXML
     private void li_car(ActionEvent event) {
-       
+        license_type.setText("ใบอนุญาติขับรถยนต์ส่วนบุคคล");
     }
 
     @FXML
     private void li_trycycle(ActionEvent event) {
-      
+        license_type.setText("ใบอนุญาติขับรถยนต์สามล้อส่วนบุคคล");
     }
 
     @FXML
     private void li_moter(ActionEvent event) {
-    
+        license_type.setText("ใบอนุญาติขับรถจักรยานยนต์ส่วนบุคคล");
     }
 
     @FXML
     private void li_car_public(ActionEvent event) {
-        
+        license_type.setText("ใบอนุญาติขับรถยนต์สาธารณะ");
     }
 
     @FXML
     private void li_trycycle_public(ActionEvent event) {
-        
+        license_type.setText("ใบอนุญาติขับรถยนต์สามล้อสาธารณะ");
     }
 
     @FXML
     private void li_moter_public(ActionEvent event) {
-        
+        license_type.setText("ใบอนุญาติขับรถจักรยานยนต์สาธารณะ");
     }
 
     @FXML
     private void li_road(ActionEvent event) {
-        
+        license_type.setText("ใบอนุญาติขับรถบดถนน");
     }
 
     @FXML
     private void li_track(ActionEvent event) {
-        
+        license_type.setText("ใบอนุญาติขับรถแทรกเตอร์");
     }
 
     @FXML
     private void li_other(ActionEvent event) {
-       
+        license_type.setText("ใบอนุญาติขับรถชนิดอื่น");
     }
 
     @FXML
     private void li_foriegn(ActionEvent event) {
-        
+        license_type.setText("ใบอนุญาติขับรถระหว่างประเทศ");
     }
  
 }
