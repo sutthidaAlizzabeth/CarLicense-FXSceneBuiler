@@ -15,6 +15,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
 import javafx.scene.control.RadioButton;
@@ -93,6 +95,12 @@ public class licenseController implements Initializable{
     private RadioButton response_yes;
     @FXML
     private RadioButton response_no;
+    @FXML
+    private Label free;
+    @FXML
+    private Button btn_save;
+    @FXML
+    private DatePicker practical_date;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -116,7 +124,7 @@ public class licenseController implements Initializable{
     private void goToHistory(ActionEvent event) throws IOException {
         Parent page = FXMLLoader.load(getClass().getResource("licenseProfile.fxml"));
         Scene scene = new Scene(page);
-        Stage stage = (Stage) btn_next.getScene().getWindow();
+        Stage stage = (Stage) btn_home.getScene().getWindow();
         stage.setScene(scene);
         stage.show();
     }
@@ -139,11 +147,13 @@ public class licenseController implements Initializable{
         stage.show();
     }
     
+
+    
     @FXML
     private void goToProfile(ActionEvent event) throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("checkProfile.fxml"));
+        Parent page = FXMLLoader.load(getClass().getResource("checkProfileShow.fxml"));
         Scene scene = new Scene(page);
-        Stage stage = (Stage) btn_pre.getScene().getWindow();
+        Stage stage = (Stage) btn_home.getScene().getWindow();
         stage.setScene(scene);
         stage.show();
     }
@@ -152,7 +162,7 @@ public class licenseController implements Initializable{
     private void goToLicense(ActionEvent event) throws IOException {
         Parent page = FXMLLoader.load(getClass().getResource("saveProfile.fxml"));
         Scene scene = new Scene(page);
-        Stage stage = (Stage) btn_pre.getScene().getWindow();
+        Stage stage = (Stage) btn_home.getScene().getWindow();
         stage.setScene(scene);
         stage.show();
     }
@@ -161,6 +171,7 @@ public class licenseController implements Initializable{
     private void practicalYes(ActionEvent event) throws IOException {
         practical_no.setSelected(false);
         practical_no_result.setVisible(false);
+        free.setVisible(check(event) && response_yes.isSelected());
         
     }
     
@@ -168,100 +179,132 @@ public class licenseController implements Initializable{
     private void practicalNo(ActionEvent event) throws IOException {
         practical_yes.setSelected(false);
         practical_no_result.setVisible(true);
+        free.setVisible(false && check(event));
         
     }
     
     @FXML
     private void responseYes(ActionEvent event) throws IOException {
         response_no.setSelected(false);
+        free.setVisible(check(event) && practical_yes.isSelected());
         
     }
     
     @FXML
     private void responseNo(ActionEvent event) throws IOException {
         response_yes.setSelected(false);
+        free.setVisible(false && check(event));
         
     }
     
     @FXML
-    private void new_card(ActionEvent event) {
-        transaction_type.setText("ทำบัตรใหม่");
-    }
-
-    @FXML
-    private void re_card(ActionEvent event) {
-        transaction_type.setText("ทำบัตรทดแทน");
-    }
-
-    @FXML
-    private void continue_card(ActionEvent event) {
-        transaction_type.setText("ต่ออายุบัตร");
+    private boolean check(ActionEvent event) throws IOException {
+        if((!transaction_type.getText().equals("กรุณาเลือก") && !license_type.getText().equals("กรุณาเลือก"))&&(practical_yes.isSelected() || practical_no.isSelected())&& (!practical_date.getValue().equals(null))&& (response_no.isSelected() || response_yes.isSelected())){
+            btn_save.setDisable(false);
+            return true;
+        }
+        else{
+            btn_save.setDisable(true);
+            return false;
+        }
+        
     }
     
     @FXML
-    private void li_car_time(ActionEvent event) {
+    private void new_card(ActionEvent event) throws IOException {
+        transaction_type.setText("ทำบัตรใหม่");
+        free.setVisible(check(event));
+    }
+
+    @FXML
+    private void re_card(ActionEvent event) throws IOException {
+        transaction_type.setText("ทำบัตรทดแทน");
+        free.setVisible(check(event));
+    }
+
+    @FXML
+    private void continue_card(ActionEvent event) throws IOException {
+        transaction_type.setText("ต่ออายุบัตร");
+        free.setVisible(check(event));
+    }
+    
+    @FXML
+    private void li_car_time(ActionEvent event) throws IOException {
         license_type.setText("ใบอนุญาติขับรถยนต์ชั่วคราว");
+        free.setVisible(check(event));
  
     }
 
     @FXML
-    private void li_trycycle_time(ActionEvent event) {
+    private void li_trycycle_time(ActionEvent event) throws IOException {
         license_type.setText("ใบอนุญาติขับรถยนต์สามล้อชั่วคราว");
+        free.setVisible(check(event));
     }
 
     @FXML
-    private void li_moter_time(ActionEvent event) {
+    private void li_moter_time(ActionEvent event) throws IOException {
         license_type.setText("ใบอนุญาติขับรถจักรยานยนต์ส่วนบุคคลชั่วคราว");
+        free.setVisible(check(event));
     }
 
     @FXML
-    private void li_car(ActionEvent event) {
+    private void li_car(ActionEvent event) throws IOException {
         license_type.setText("ใบอนุญาติขับรถยนต์ส่วนบุคคล");
+        free.setVisible(check(event));
     }
 
     @FXML
-    private void li_trycycle(ActionEvent event) {
+    private void li_trycycle(ActionEvent event) throws IOException {
         license_type.setText("ใบอนุญาติขับรถยนต์สามล้อส่วนบุคคล");
+        free.setVisible(check(event));
     }
 
     @FXML
-    private void li_moter(ActionEvent event) {
+    private void li_moter(ActionEvent event) throws IOException {
         license_type.setText("ใบอนุญาติขับรถจักรยานยนต์ส่วนบุคคล");
+        free.setVisible(check(event));
     }
 
     @FXML
-    private void li_car_public(ActionEvent event) {
+    private void li_car_public(ActionEvent event) throws IOException {
         license_type.setText("ใบอนุญาติขับรถยนต์สาธารณะ");
+        free.setVisible(check(event));
     }
 
     @FXML
-    private void li_trycycle_public(ActionEvent event) {
+    private void li_trycycle_public(ActionEvent event) throws IOException {
         license_type.setText("ใบอนุญาติขับรถยนต์สามล้อสาธารณะ");
+        free.setVisible(check(event));
     }
 
     @FXML
-    private void li_moter_public(ActionEvent event) {
+    private void li_moter_public(ActionEvent event) throws IOException {
         license_type.setText("ใบอนุญาติขับรถจักรยานยนต์สาธารณะ");
+        free.setVisible(check(event));
     }
 
     @FXML
-    private void li_road(ActionEvent event) {
+    private void li_road(ActionEvent event) throws IOException {
         license_type.setText("ใบอนุญาติขับรถบดถนน");
+        free.setVisible(check(event));
     }
 
     @FXML
-    private void li_track(ActionEvent event) {
+    private void li_track(ActionEvent event) throws IOException {
         license_type.setText("ใบอนุญาติขับรถแทรกเตอร์");
+        free.setVisible(check(event));
     }
 
     @FXML
-    private void li_other(ActionEvent event) {
+    private void li_other(ActionEvent event) throws IOException {
         license_type.setText("ใบอนุญาติขับรถชนิดอื่น");
+        free.setVisible(check(event));
     }
 
     @FXML
-    private void li_foriegn(ActionEvent event) {
+    private void li_foriegn(ActionEvent event) throws IOException {
         license_type.setText("ใบอนุญาติขับรถระหว่างประเทศ");
+        free.setVisible(check(event));
     }
  
 }
