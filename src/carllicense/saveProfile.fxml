@@ -301,21 +301,21 @@
                               </Label>
                               <GridPane GridPane.columnIndex="1" GridPane.rowIndex="3">
                                  <children>
-                                    <RadioButton mnemonicParsing="false" text="ผ่าน">
+                                    <RadioButton fx:id="practical_yes" mnemonicParsing="false" onAction="#practicalYes" text="ผ่าน">
                                        <font>
                                           <Font name="Arial" size="16.0" />
                                        </font>
                                     </RadioButton>
-                                    <RadioButton mnemonicParsing="false" prefHeight="22.0" prefWidth="83.0" text="ไม่ผ่าน" GridPane.columnIndex="1">
+                                    <RadioButton fx:id="practical_no" mnemonicParsing="false" onAction="#practicalNo" prefHeight="22.0" prefWidth="83.0" text="ไม่ผ่าน" GridPane.columnIndex="1">
                                        <font>
                                           <Font name="Arial" size="16.0" />
                                        </font>
                                     </RadioButton>
-                                    <GridPane GridPane.columnIndex="2">
+                                    <GridPane fx:id="practical_no_result" GridPane.columnIndex="2">
                                       <columnConstraints>
                                         <ColumnConstraints hgrow="SOMETIMES" maxWidth="198.0" minWidth="10.0" prefWidth="155.0" />
-                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="213.0" minWidth="10.0" prefWidth="213.0" />
-                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.33331298828125" minWidth="10.0" prefWidth="129.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="213.0" minWidth="10.0" prefWidth="201.0" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.33331298828125" minWidth="10.0" prefWidth="139.0" />
                                       </columnConstraints>
                                       <rowConstraints>
                                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -347,12 +347,12 @@
                               <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="4" />
                               <GridPane GridPane.columnIndex="1" GridPane.rowIndex="5">
                                  <children>
-                                    <RadioButton mnemonicParsing="false" text="ผ่าน">
+                                    <RadioButton fx:id="response_yes" mnemonicParsing="false" onAction="#responseYes" text="ผ่าน">
                                        <font>
                                           <Font name="Arial" size="16.0" />
                                        </font>
                                     </RadioButton>
-                                    <RadioButton mnemonicParsing="false" prefHeight="22.0" prefWidth="80.0" text="ไม่ผ่าน" GridPane.columnIndex="1">
+                                    <RadioButton fx:id="response_no" mnemonicParsing="false" onAction="#responseNo" prefHeight="22.0" prefWidth="80.0" text="ไม่ผ่าน" GridPane.columnIndex="1">
                                        <font>
                                           <Font name="Arial" size="16.0" />
                                        </font>

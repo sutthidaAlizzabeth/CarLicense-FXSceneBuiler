@@ -17,6 +17,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.MenuButton;
 import javafx.scene.control.MenuItem;
+import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
@@ -82,6 +83,16 @@ public class licenseController implements Initializable{
     private MenuButton transaction_type;
     @FXML
     private MenuButton license_type;
+    @FXML
+    private RadioButton practical_yes;
+    @FXML
+    private RadioButton practical_no;
+    @FXML
+    private GridPane practical_no_result;
+    @FXML
+    private RadioButton response_yes;
+    @FXML
+    private RadioButton response_no;
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
@@ -144,6 +155,32 @@ public class licenseController implements Initializable{
         Stage stage = (Stage) btn_pre.getScene().getWindow();
         stage.setScene(scene);
         stage.show();
+    }
+    
+    @FXML
+    private void practicalYes(ActionEvent event) throws IOException {
+        practical_no.setSelected(false);
+        practical_no_result.setVisible(false);
+        
+    }
+    
+    @FXML
+    private void practicalNo(ActionEvent event) throws IOException {
+        practical_yes.setSelected(false);
+        practical_no_result.setVisible(true);
+        
+    }
+    
+    @FXML
+    private void responseYes(ActionEvent event) throws IOException {
+        response_no.setSelected(false);
+        
+    }
+    
+    @FXML
+    private void responseNo(ActionEvent event) throws IOException {
+        response_yes.setSelected(false);
+        
     }
     
     @FXML
