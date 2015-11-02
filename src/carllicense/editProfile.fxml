@@ -59,24 +59,16 @@
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <Label text="รหัสประจำตัวประชาชน : " GridPane.halignment="RIGHT">
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="รหัสประจำตัวประชาชน  1101500764377" GridPane.columnIndex="1" GridPane.valignment="BOTTOM">
                            <font>
-                              <Font name="Arial" size="18.0" />
+                              <Font name="Arial Bold" size="18.0" />
                            </font>
-                        </Label>
-                        <TextField fx:id="search" prefHeight="33.0" prefWidth="200.0" promptText="1234567890123" GridPane.columnIndex="1">
+                        </Text>
+                        <Text fx:id="alert" fill="RED" layoutX="338.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="***โปรดตรวจสอบข้อมูลอีกครั้ง" visible="false" GridPane.columnIndex="1" GridPane.halignment="CENTER">
                            <font>
-                              <Font name="Arial" size="18.0" />
+                              <Font name="Arial Bold" size="16.0" />
                            </font>
-                        </TextField>
-                        <Button fx:id="btn_search" mnemonicParsing="false" onAction="#searchId" text="แสดงประวัติ" GridPane.columnIndex="2">
-                           <font>
-                              <Font name="Arial" size="18.0" />
-                           </font>
-                           <GridPane.margin>
-                              <Insets left="10.0" />
-                           </GridPane.margin>
-                        </Button>
+                        </Text>
                      </children>
                   </GridPane>
                </children>
@@ -245,7 +237,7 @@
                                           <Insets bottom="10.0" right="10.0" />
                                        </GridPane.margin>
                                     </TextArea>
-                                    <TextField maxWidth="200.0" text="082-337-0854" GridPane.columnIndex="1">
+                                    <TextField fx:id="tel" maxWidth="200.0" text="082-337-0854" GridPane.columnIndex="1">
                                        <font>
                                           <Font name="Arial" size="16.0" />
                                        </font>
@@ -367,7 +359,7 @@
                                           <Font name="Arial" size="16.0" />
                                        </font>
                                     </Label>
-                                    <TextField text=" วิวผกา" GridPane.columnIndex="1">
+                                    <TextField fx:id="nameTH" text=" วิวผกา" GridPane.columnIndex="1">
                                        <font>
                                           <Font name="Arial" size="16.0" />
                                        </font>
@@ -375,7 +367,7 @@
                                           <Insets right="10.0" />
                                        </GridPane.margin>
                                     </TextField>
-                                    <TextField text="Viewpaka" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                    <TextField fx:id="name" text="Viewpaka" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                        <font>
                                           <Font name="Arial" size="16.0" />
                                        </font>
@@ -383,7 +375,7 @@
                                           <Insets right="10.0" />
                                        </GridPane.margin>
                                     </TextField>
-                                    <TextField text="วาผกิว" GridPane.columnIndex="3">
+                                    <TextField fx:id="surnameTH" text="วาผกิว" GridPane.columnIndex="3">
                                        <font>
                                           <Font name="Arial" size="16.0" />
                                        </font>
@@ -391,7 +383,7 @@
                                           <Insets right="10.0" />
                                        </GridPane.margin>
                                     </TextField>
-                                    <TextField text="wapakiew" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                    <TextField fx:id="surname" text="wapakiew" GridPane.columnIndex="3" GridPane.rowIndex="1">
                                        <font>
                                           <Font name="Arial" size="16.0" />
                                        </font>
@@ -407,7 +399,7 @@
                                           <Insets right="10.0" />
                                        </GridPane.margin>
                                     </TextField>
-                                    <TextField text="ไทย" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                                    <TextField fx:id="nation" text="ไทย" GridPane.columnIndex="3" GridPane.rowIndex="2">
                                        <font>
                                           <Font name="Arial" size="16.0" />
                                        </font>
