@@ -271,12 +271,7 @@
                               <Insets top="20.0" />
                            </GridPane.margin>
                         </GridPane>
-                        <Button fx:id="data_btn" mnemonicParsing="false" text="แก้ไขข้อมูล" visible="false" GridPane.columnIndex="1" GridPane.halignment="RIGHT" />
-                        <Text fx:id="result" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="กรุณากรอกรหัสประจำตัวประชาชน" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
-                           <font>
-                              <Font name="Arial Bold" size="18.0" />
-                           </font>
-                        </Text>
+                        <Button fx:id="data_btn" mnemonicParsing="false" onAction="#goToProfile" text="บันทึก" GridPane.columnIndex="1" GridPane.halignment="RIGHT" />
                         <GridPane fx:id="data1" GridPane.columnSpan="2" GridPane.rowIndex="1">
                           <columnConstraints>
                             <ColumnConstraints hgrow="SOMETIMES" maxWidth="582.0" minWidth="10.0" prefWidth="582.0" />

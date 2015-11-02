@@ -168,6 +168,25 @@ public class licenseController implements Initializable{
     }
     
     @FXML
+    private void goToEdit(ActionEvent event) throws IOException {
+        Parent page = FXMLLoader.load(getClass().getResource("editProfile.fxml"));
+        Scene scene = new Scene(page);
+        Stage stage = (Stage) btn_home.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    @FXML
+    private void save(ActionEvent event) throws IOException {
+        
+        Parent page = FXMLLoader.load(getClass().getResource("editProfile.fxml"));
+        Scene scene = new Scene(page);
+        Stage stage = (Stage) btn_home.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    @FXML
     private void practicalYes(ActionEvent event) throws IOException {
         practical_no.setSelected(false);
         practical_no_result.setVisible(false);
