@@ -271,7 +271,7 @@
                <children>
                   <ImageView fitHeight="350.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                      <image>
-                        <Image url="@../../../12212142_10205734518506816_794101720_n.jpg" />
+                        <Image url="@12212142_10205734518506816_794101720_n.jpg" />
                      </image>
                   </ImageView>
                </children>

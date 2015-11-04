@@ -54,6 +54,15 @@ public class MenuSelectController implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
+            
+    @FXML
+    private void goToReport(ActionEvent event) throws IOException {
+        Parent page = FXMLLoader.load(getClass().getResource("report.fxml"));
+        Scene scene = new Scene(page);
+        Stage stage = (Stage) btn_report.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
 
     @FXML
     private void logout(ActionEvent event) throws IOException {
