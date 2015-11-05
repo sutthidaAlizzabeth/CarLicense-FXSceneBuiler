@@ -130,6 +130,10 @@ public class licenseController implements Initializable {
         data2.setVisible(id.equals(b_id));
         if (!id.equals(b_id)) {
             result.setText("ไม่พบข้อมูล");
+            btn_next.setDisable(true);
+        }
+        else{
+            btn_next.setDisable(false);
         }
         result.setVisible(!id.equals(b_id) || id == null);
     }
