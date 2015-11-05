@@ -5,29 +5,26 @@
  */
 package carllicense;
 
-import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.MenuButton;
 import javafx.scene.layout.GridPane;
-import javafx.stage.Stage;
 
 /**
  * FXML Controller class
  *
  * @author Alizzabeth
  */
-public class DailyReportController implements Initializable {
+public class MonthReportController implements Initializable {
     @FXML
-    private Button btn_home;
+    private DatePicker input_date;
+    @FXML
+    private MenuButton kind;
     @FXML
     private GridPane show_month_year;
     @FXML
@@ -37,9 +34,7 @@ public class DailyReportController implements Initializable {
     @FXML
     private Button btn_view_stat;
     @FXML
-    private MenuButton kind;
-    @FXML
-    private DatePicker input_date;
+    private Button btn_home;
 
     /**
      * Initializes the controller class.
@@ -50,12 +45,15 @@ public class DailyReportController implements Initializable {
     }    
 
     @FXML
-    private void goToHome(ActionEvent event) throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("menuSelect.fxml"));
-        Scene scene = new Scene(page);
-        Stage stage = (Stage) btn_home.getScene().getWindow();
-        stage.setScene(scene);
-        stage.show();
+    private void day(ActionEvent event) {
+    }
+
+    @FXML
+    private void month(ActionEvent event) {
+    }
+
+    @FXML
+    private void year(ActionEvent event) {
     }
 
     @FXML
@@ -171,42 +169,11 @@ public class DailyReportController implements Initializable {
     }
 
     @FXML
-    private void viewStat(ActionEvent event) throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("report.fxml"));
-        Scene scene = new Scene(page);
-        Stage stage = (Stage) btn_home.getScene().getWindow();
-        stage.setScene(scene);
-        stage.show();
+    private void viewStat(ActionEvent event) {
     }
 
     @FXML
-    private void day(ActionEvent event) {
-        kind.setText("รายงานประจำวัน");
-        input_date.setVisible(true);
-        show_month_year.setVisible(true);
-        input_month.setVisible(false);
-        input_year.setVisible(false);
-    }
-
-    @FXML
-    private void month(ActionEvent event) {
-        kind.setText("รายงานประจำเดือน");
-        input_date.setVisible(false);
-        show_month_year.setVisible(true);
-        input_month.setVisible(true);
-        input_year.setVisible(true);
-        input_month.setText("พฤศจิกายน");
-        input_year.setText("2015");
-    }
-
-    @FXML
-    private void year(ActionEvent event) {
-        kind.setText("รายงานประจำปี");
-        input_date.setVisible(false);
-        show_month_year.setVisible(true);
-        input_month.setVisible(false);
-        input_year.setVisible(true);
-        input_year.setText("2015");
+    private void goToHome(ActionEvent event) {
     }
     
 }

@@ -59,16 +59,17 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <DatePicker GridPane.columnIndex="2" />
+                  <DatePicker fx:id="input_date" GridPane.columnIndex="2" />
                   <Label text="ประเภท" GridPane.halignment="RIGHT">
                      <font>
                         <Font name="Arial Bold" size="18.0" />
                      </font>
                   </Label>
-                  <MenuButton mnemonicParsing="false" prefWidth="200.0" text="รายงานประจำวัน" GridPane.columnIndex="1">
+                  <MenuButton fx:id="kind" mnemonicParsing="false" prefWidth="200.0" text="รายงานประจำวัน" GridPane.columnIndex="1">
                     <items>
-                      <MenuItem mnemonicParsing="false" text="รายงานประจำเดือน" />
-                      <MenuItem mnemonicParsing="false" text="รายประจำปี" />
+                      <MenuItem mnemonicParsing="false" onAction="#day" text="รายงานประจำวัน" />
+                      <MenuItem mnemonicParsing="false" onAction="#month" text="รายงานประจำเดือน                 " />
+                        <MenuItem mnemonicParsing="false" onAction="#year" text="รายงานประจำปี" />
                     </items>
                   </MenuButton>
                   <GridPane fx:id="show_month_year" hgap="5.0" GridPane.columnIndex="2">
@@ -113,8 +114,8 @@
                         <Button mnemonicParsing="false" text="บันทึกเป็น" GridPane.columnIndex="3" GridPane.halignment="LEFT" />
                      </children>
                      <columnConstraints>
-                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="473.33331298828125" minWidth="10.0" prefWidth="146.33944702148438" />
-                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="496.0" minWidth="10.0" prefWidth="134.8236083984375" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="473.33331298828125" minWidth="10.0" prefWidth="118.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="496.0" minWidth="10.0" prefWidth="180.0" />
                         <ColumnConstraints hgrow="SOMETIMES" maxWidth="496.0" minWidth="10.0" prefWidth="163.0" />
                         <ColumnConstraints hgrow="SOMETIMES" maxWidth="496.0" minWidth="10.0" prefWidth="98.0" />
                      </columnConstraints>
@@ -142,7 +143,7 @@
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <Button mnemonicParsing="false" text="ดูสถิติ" GridPane.halignment="RIGHT" />
+                        <Button fx:id="btn_view_stat" mnemonicParsing="false" onAction="#viewStat" text="ดูสถิติ" GridPane.halignment="RIGHT" />
                      </children>
                   </GridPane>
                   <Button fx:id="btn_home" mnemonicParsing="false" onAction="#goToHome" text="กลับหน้าแรก" />
