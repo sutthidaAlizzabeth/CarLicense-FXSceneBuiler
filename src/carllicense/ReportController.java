@@ -55,6 +55,8 @@ public class ReportController implements Initializable {
     private MenuButton input_month;
     @FXML
     private MenuButton input_year;
+    @FXML
+    private Button btn_view_report;
     /**
      * Initializes the controller class.
      */
@@ -91,6 +93,7 @@ public class ReportController implements Initializable {
         kind.setText("รายงานประจำวัน");
         input_date.setVisible(true);
         show_month_year.setVisible(false);
+        btn_view_report.setText("ดูรายงานประจำวัน");
     }
 
     @FXML
@@ -102,6 +105,7 @@ public class ReportController implements Initializable {
         input_year.setVisible(true);
         input_month.setText("พฤศจิกายน");
         input_year.setText("2015");
+        btn_view_report.setText("ดูรายงานประจำเดือน");
     }
 
     @FXML
@@ -112,6 +116,7 @@ public class ReportController implements Initializable {
         input_month.setVisible(false);
         input_year.setVisible(true);
         input_year.setText("2015");
+        btn_view_report.setText("ดูรายงานประจำปี");
     }
 
     @FXML
@@ -119,6 +124,7 @@ public class ReportController implements Initializable {
         num_new.setText((int)(Math.random()*10)+"");
         num_con.setText((int)(Math.random()*10)+"");
         num_re.setText((int)(Math.random()*10)+"");
+        
     }
 
     @FXML
@@ -387,5 +393,9 @@ public class ReportController implements Initializable {
         num_new.setText(num[0]+"");
         num_con.setText(num[1]+"");
         num_re.setText(num[2]+"");
+    }
+
+    @FXML
+    private void viewReport(ActionEvent event) {
     }
 }
