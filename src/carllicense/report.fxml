@@ -78,7 +78,7 @@
                                     <Font name="Arial Bold" size="22.0" />
                                  </font>
                               </Label>
-                              <Label text="150" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                              <Label fx:id="num_new" text="6" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                                  <font>
                                     <Font name="Arial Bold" size="72.0" />
                                  </font>
@@ -95,7 +95,7 @@
                                     <Font name="Arial Bold" size="22.0" />
                                  </font>
                               </Label>
-                              <Label text="300" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                              <Label fx:id="num_con" text="3" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                                  <font>
                                     <Font name="Arial Bold" size="72.0" />
                                  </font>
@@ -117,7 +117,7 @@
                                     <Font name="Arial Bold" size="22.0" />
                                  </font>
                               </Label>
-                              <Label text="95" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                              <Label fx:id="num_re" text="0" textFill="WHITE" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                                  <font>
                                     <Font name="Arial Bold" size="72.0" />
                                  </font>
@@ -199,7 +199,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <DatePicker GridPane.columnIndex="2" />
+                  <DatePicker fx:id="input_date" onAction="#inputDate" promptText="11/06/2015" GridPane.columnIndex="2" />
                   <Label text="ประเภท" GridPane.halignment="RIGHT">
                      <font>
                         <Font name="Arial Bold" size="18.0" />
@@ -208,11 +208,11 @@
                   <MenuButton fx:id="kind" mnemonicParsing="false" prefWidth="200.0" text="รายงานประจำวัน" GridPane.columnIndex="1">
                     <items>
                         <MenuItem fx:id="day" mnemonicParsing="false" onAction="#day" text="รายงานประจำวัน" />
-                      <MenuItem fx:id="month" mnemonicParsing="false" onAction="#month" text="รายงานประจำเดือน" />
+                      <MenuItem fx:id="month" mnemonicParsing="false" onAction="#month" text="รายงานประจำเดือน                    " />
                       <MenuItem fx:id="year" mnemonicParsing="false" onAction="#year" text="รายประจำปี" />
                     </items>
                   </MenuButton>
-                  <GridPane hgap="5.0" visible="false" GridPane.columnIndex="2">
+                  <GridPane fx:id="show_month_year" hgap="5.0" GridPane.columnIndex="2">
                     <columnConstraints>
                       <ColumnConstraints hgrow="SOMETIMES" maxWidth="473.33331298828125" minWidth="10.0" prefWidth="143.3333740234375" />
                       <ColumnConstraints hgrow="SOMETIMES" maxWidth="496.0" minWidth="10.0" prefWidth="458.6666259765625" />
@@ -221,16 +221,40 @@
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <MenuButton mnemonicParsing="false" prefHeight="25.0" prefWidth="212.0" text="เดือน">
+                        <MenuButton fx:id="input_month" mnemonicParsing="false" prefHeight="25.0" prefWidth="212.0" text="พฤศจิกายน" visible="false" GridPane.columnIndex="1">
                            <items>
-                              <MenuItem mnemonicParsing="false" text="Action 1" />
-                              <MenuItem mnemonicParsing="false" text="Action 2" />
+                              <MenuItem mnemonicParsing="false" onAction="#setJan" text="มกราคม" />
+                              <MenuItem mnemonicParsing="false" onAction="#setFeb" text="กุมภาพันธ์" />
+                              <MenuItem mnemonicParsing="false" onAction="#setMar" text="มีนาคม" />
+                              <MenuItem mnemonicParsing="false" onAction="#setApr" text="เมษายน" />
+                              <MenuItem mnemonicParsing="false" onAction="#setMay" text="พฤษภาคม" />
+                              <MenuItem mnemonicParsing="false" onAction="#setJun" text="มิถุนายน" />
+                              <MenuItem mnemonicParsing="false" onAction="#setJul" text="กรกฎาคม" />
+                              <MenuItem mnemonicParsing="false" onAction="#setAug" text="สิงหาคม" />
+                              <MenuItem mnemonicParsing="false" onAction="#setSep" text="กันยายน" />
+                              <MenuItem mnemonicParsing="false" onAction="#setOct" text="ตุลาคม" />
+                              <MenuItem mnemonicParsing="false" onAction="#setNov" text="พฤศจิกายน                                  " />
+                              <MenuItem mnemonicParsing="false" onAction="#setDec" text="ธันวาคม" />
                            </items>
                         </MenuButton>
-                        <MenuButton mnemonicParsing="false" prefHeight="25.0" prefWidth="80.0" text="ปี" GridPane.columnIndex="1">
+                        <MenuButton fx:id="input_year" mnemonicParsing="false" prefHeight="27.0" prefWidth="111.0" text="2015" visible="false">
                            <items>
-                              <MenuItem mnemonicParsing="false" text="Action 1" />
-                              <MenuItem mnemonicParsing="false" text="Action 2" />
+                              <MenuItem mnemonicParsing="false" onAction="#set2000" text="2000               " />
+                              <MenuItem mnemonicParsing="false" onAction="#set2001" text="2001" />
+                              <MenuItem mnemonicParsing="false" onAction="#set2002" text="2002" />
+                              <MenuItem mnemonicParsing="false" onAction="#set2003" text="2003" />
+                              <MenuItem mnemonicParsing="false" onAction="#set2004" text="2004" />
+                              <MenuItem mnemonicParsing="false" onAction="#set2005" text="2005" />
+                              <MenuItem mnemonicParsing="false" onAction="#set2006" text="2006" />
+                              <MenuItem mnemonicParsing="false" onAction="#set2007" text="2007" />
+                              <MenuItem mnemonicParsing="false" onAction="#set2008" text="2008" />
+                              <MenuItem mnemonicParsing="false" onAction="#set2009" text="2009" />
+                              <MenuItem mnemonicParsing="false" onAction="#set2010" text="2010" />
+                              <MenuItem mnemonicParsing="false" onAction="#set2011" text="2011" />
+                              <MenuItem mnemonicParsing="false" onAction="#set2012" text="2012" />
+                              <MenuItem mnemonicParsing="false" onAction="#set2013" text="2013" />
+                              <MenuItem mnemonicParsing="false" onAction="#set2014" text="2014" />
+                              <MenuItem mnemonicParsing="false" onAction="#set2015" text="2015" />
                            </items>
                         </MenuButton>
                      </children>
@@ -256,12 +280,12 @@
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <Button mnemonicParsing="false" text="บันทึกเป็น" GridPane.columnIndex="1" GridPane.halignment="RIGHT" />
-                        <Button mnemonicParsing="false" text="พิมพ์" GridPane.columnIndex="2" GridPane.halignment="RIGHT" />
-                        <Button mnemonicParsing="false" text="ดูรายงาน" GridPane.halignment="RIGHT" />
+                        <Button mnemonicParsing="false" text="บันทึกเป็น" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM" />
+                        <Button mnemonicParsing="false" text="พิมพ์" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM" />
+                        <Button mnemonicParsing="false" text="ดูรายงาน" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM" />
                      </children>
                   </GridPane>
-                  <Button fx:id="btn_home" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goToHome" prefWidth="200.0" text="กลับหน้าแรก" />
+                  <Button fx:id="btn_home" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goToHome" prefWidth="200.0" text="กลับหน้าแรก" GridPane.valignment="BOTTOM" />
                </children>
             </GridPane>
          </children>
