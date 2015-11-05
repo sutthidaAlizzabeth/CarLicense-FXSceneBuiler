@@ -15,6 +15,8 @@ import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.control.MenuButton;
+import javafx.scene.control.MenuItem;
 import javafx.scene.control.TableView;
 import javafx.stage.Stage;
 
@@ -26,15 +28,26 @@ import javafx.stage.Stage;
 public class ReportController implements Initializable {
     
     @FXML
-    TableView table;
-    @FXML
     Button btn_home;
+    @FXML
+    private MenuButton kind;
+    @FXML
+    private MenuItem day;
+    @FXML
+    private MenuItem month;
+    @FXML
+    private MenuItem year;
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         
+    }
+    
+    @FXML
+    public void exit(){
+        System.exit(0);
     }
     
     @FXML
@@ -46,4 +59,24 @@ public class ReportController implements Initializable {
         stage.show();
     }
     
+    @FXML
+    private void logout(ActionEvent event) throws IOException {
+        Parent page = FXMLLoader.load(getClass().getResource("index.fxml"));
+        Scene scene = new Scene(page);
+        Stage stage = (Stage) btn_home.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+
+    @FXML
+    private void day(ActionEvent event) {
+    }
+
+    @FXML
+    private void month(ActionEvent event) {
+    }
+
+    @FXML
+    private void year(ActionEvent event) {
+    }
 }

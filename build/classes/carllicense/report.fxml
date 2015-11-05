@@ -208,6 +208,7 @@
                   </Label>
                   <MenuButton mnemonicParsing="false" prefWidth="200.0" text="รายงานประจำวัน" GridPane.columnIndex="1">
                     <items>
+                        <MenuItem mnemonicParsing="false" text="รายงานประจำวัน" />
                       <MenuItem mnemonicParsing="false" text="รายงานประจำเดือน" />
                       <MenuItem mnemonicParsing="false" text="รายประจำปี" />
                     </items>
@@ -261,7 +262,7 @@
                         <Button mnemonicParsing="false" text="ดูรายงาน" GridPane.halignment="RIGHT" />
                      </children>
                   </GridPane>
-                  <Button fx:id="btn_home" mnemonicParsing="false" onAction="#goToHome" text="กลับหน้าแรก" />
+                  <Button fx:id="btn_home" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goToHome" prefWidth="200.0" text="กลับหน้าแรก" />
                </children>
             </GridPane>
             <GridPane GridPane.rowIndex="3">
