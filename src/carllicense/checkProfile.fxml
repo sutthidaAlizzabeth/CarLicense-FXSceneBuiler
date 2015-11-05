@@ -17,7 +17,7 @@
             <Menu mnemonicParsing="false" text="ไฟล​์">
                <items>
                   <MenuItem mnemonicParsing="false" onAction="#logout" text="ออกจากระบบ" />
-                  <MenuItem mnemonicParsing="false" text="ปิดโปรแกรม" />
+                  <MenuItem mnemonicParsing="false" onAction="#exit" text="ปิดโปรแกรม" />
                </items>
             </Menu>
             <Menu mnemonicParsing="false" text="ช่วยเหลือ">
@@ -30,14 +30,14 @@
             <Insets />
          </opaqueInsets>
       </MenuBar>
-      <GridPane layoutY="27.0" prefHeight="697.0" prefWidth="1024.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+      <GridPane layoutY="27.0" prefHeight="727.0" prefWidth="1024.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
         <columnConstraints>
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="1024.0" minWidth="10.0" prefWidth="768.0" />
         </columnConstraints>
         <rowConstraints>
             <RowConstraints maxHeight="217.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="217.0" minHeight="10.0" prefHeight="51.66667175292969" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="624.0" minHeight="10.0" prefHeight="72.33332824707031" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="217.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="624.0" minHeight="10.0" prefHeight="83.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="624.0" minHeight="10.0" prefHeight="484.0" vgrow="SOMETIMES" />
           <RowConstraints maxHeight="249.0" minHeight="10.0" prefHeight="88.0" vgrow="SOMETIMES" />
         </rowConstraints>
@@ -98,7 +98,7 @@
                   <Insets />
                </opaqueInsets>
                <GridPane.margin>
-                  <Insets left="10.0" right="10.0" />
+                  <Insets />
                </GridPane.margin>
                <children>
                   <GridPane style="-fx-background-color: #3f92d2;">
@@ -156,7 +156,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <GridPane.margin>
-                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                  <Insets />
                </GridPane.margin>
                <children>
                   <GridPane style="-fx-background-color: #d7ddeb;">
@@ -430,7 +430,7 @@
                   <Button fx:id="btn_next" disable="true" mnemonicParsing="false" onAction="#goToHistory" prefWidth="200.0" text="ขั้นตอนต่อไป " GridPane.columnIndex="3" />
                </children>
             </GridPane>
-            <Label text="ชื่อผู้ใช้: บี" GridPane.halignment="RIGHT">
+            <Label text="ชื่อผู้ใช้: สุทธิดา" GridPane.halignment="RIGHT">
                <font>
                   <Font name="Arial Bold" size="18.0" />
                </font>

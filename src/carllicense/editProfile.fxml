@@ -16,8 +16,8 @@
          <menus>
             <Menu mnemonicParsing="false" text="ไฟล​์">
                <items>
-                  <MenuItem mnemonicParsing="false" text="ออกจากระบบ" />
-                  <MenuItem mnemonicParsing="false" text="ปิดโปรแกรม" />
+                  <MenuItem mnemonicParsing="false" onAction="#logout" text="ออกจากระบบ" />
+                  <MenuItem mnemonicParsing="false" onAction="#exit" text="ปิดโปรแกรม" />
                </items>
             </Menu>
             <Menu mnemonicParsing="false" text="ช่วยเหลือ">
@@ -35,13 +35,14 @@
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="1024.0" minWidth="10.0" prefWidth="768.0" />
         </columnConstraints>
         <rowConstraints>
-          <RowConstraints maxHeight="217.0" minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="217.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="217.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
           <RowConstraints maxHeight="624.0" minHeight="10.0" prefHeight="83.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="624.0" minHeight="10.0" prefHeight="484.0" vgrow="SOMETIMES" />
           <RowConstraints maxHeight="249.0" minHeight="10.0" prefHeight="88.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <GridPane prefHeight="80.0" prefWidth="966.0">
+            <GridPane prefHeight="80.0" prefWidth="966.0" GridPane.rowIndex="1">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
               </columnConstraints>
@@ -49,7 +50,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <GridPane>
+                  <GridPane prefHeight="80.0">
                     <columnConstraints>
                       <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -73,7 +74,7 @@
                   </GridPane>
                </children>
             </GridPane>
-            <GridPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" GridPane.rowIndex="1">
+            <GridPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" GridPane.rowIndex="2">
               <columnConstraints>
                 <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                   <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -86,7 +87,7 @@
                   <Insets />
                </opaqueInsets>
                <GridPane.margin>
-                  <Insets left="10.0" right="10.0" />
+                  <Insets />
                </GridPane.margin>
                <children>
                   <GridPane style="-fx-background-color: #3f92d2;">
@@ -136,7 +137,7 @@
                   </GridPane>
                </children>
             </GridPane>
-            <GridPane style="-fx-background-color: #d7ddeb;" GridPane.rowIndex="2">
+            <GridPane style="-fx-background-color: #d7ddeb;" GridPane.rowIndex="3">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
               </columnConstraints>
@@ -144,7 +145,7 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <GridPane.margin>
-                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                  <Insets />
                </GridPane.margin>
                <children>
                   <GridPane style="-fx-background-color: #d7ddeb;">
@@ -441,7 +442,7 @@
                   </GridPane>
                </children>
             </GridPane>
-            <GridPane GridPane.rowIndex="3">
+            <GridPane GridPane.rowIndex="4">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -455,6 +456,14 @@
                   <Button fx:id="btn_home" mnemonicParsing="false" onAction="#goToHome" prefWidth="200.0" text="กลับหน้าแรก " />
                </children>
             </GridPane>
+            <Label text="ชื่อผู้ใช้: สุทธิดา" GridPane.halignment="RIGHT">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="50.0" />
+               </GridPane.margin>
+            </Label>
          </children>
       </GridPane>
    </children>

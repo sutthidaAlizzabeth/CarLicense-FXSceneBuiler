@@ -120,6 +120,11 @@ public class licenseController implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         // TODO
     }
+    
+    @FXML
+    public void exit(){
+        System.exit(0);
+    }
 
     @FXML
     private void searchId(ActionEvent event) {
