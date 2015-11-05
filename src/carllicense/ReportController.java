@@ -97,16 +97,21 @@ public class ReportController implements Initializable {
     private void month(ActionEvent event) {
         kind.setText("รายงานประจำเดือน");
         input_date.setVisible(false);
+        show_month_year.setVisible(true);
         input_month.setVisible(true);
         input_year.setVisible(true);
+        input_month.setText("พฤศจิกายน");
+        input_year.setText("2015");
     }
 
     @FXML
     private void year(ActionEvent event) {
         kind.setText("รายงานประจำปี");
         input_date.setVisible(false);
+        show_month_year.setVisible(true);
         input_month.setVisible(false);
         input_year.setVisible(true);
+        input_year.setText("2015");
     }
 
     @FXML
