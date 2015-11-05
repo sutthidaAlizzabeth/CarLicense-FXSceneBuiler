@@ -92,8 +92,9 @@ public class ReportController implements Initializable {
     private void day(ActionEvent event) {
         kind.setText("รายงานประจำวัน");
         input_date.setVisible(true);
-        show_month_year.setVisible(false);
-        btn_view_report.setText("ดูรายงานประจำวัน");
+        show_month_year.setVisible(true);
+        input_month.setVisible(false);
+        input_year.setVisible(false);
     }
 
     @FXML
@@ -105,7 +106,6 @@ public class ReportController implements Initializable {
         input_year.setVisible(true);
         input_month.setText("พฤศจิกายน");
         input_year.setText("2015");
-        btn_view_report.setText("ดูรายงานประจำเดือน");
     }
 
     @FXML
@@ -116,7 +116,6 @@ public class ReportController implements Initializable {
         input_month.setVisible(false);
         input_year.setVisible(true);
         input_year.setText("2015");
-        btn_view_report.setText("ดูรายงานประจำปี");
     }
 
     @FXML
@@ -396,6 +395,11 @@ public class ReportController implements Initializable {
     }
 
     @FXML
-    private void viewReport(ActionEvent event) {
+    private void viewReport(ActionEvent event) throws IOException {
+        Parent page = FXMLLoader.load(getClass().getResource("dailyReport.fxml"));
+        Scene scene = new Scene(page);
+        Stage stage = (Stage) btn_home.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
     }
 }

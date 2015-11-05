@@ -214,8 +214,10 @@
                   </MenuButton>
                   <GridPane fx:id="show_month_year" hgap="5.0" GridPane.columnIndex="2">
                     <columnConstraints>
-                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="473.33331298828125" minWidth="10.0" prefWidth="143.3333740234375" />
-                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="496.0" minWidth="10.0" prefWidth="458.6666259765625" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="473.33331298828125" minWidth="10.0" prefWidth="124.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="496.0" minWidth="10.0" prefWidth="148.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="496.0" minWidth="10.0" prefWidth="163.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="496.0" minWidth="10.0" prefWidth="98.0" />
                     </columnConstraints>
                     <rowConstraints>
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -257,6 +259,8 @@
                               <MenuItem mnemonicParsing="false" onAction="#set2015" text="2015" />
                            </items>
                         </MenuButton>
+                        <Button mnemonicParsing="false" text="พิมพ์" GridPane.columnIndex="2" GridPane.halignment="RIGHT" />
+                        <Button mnemonicParsing="false" text="บันทึกเป็น" GridPane.columnIndex="3" GridPane.halignment="LEFT" />
                      </children>
                   </GridPane>
                </children>
@@ -272,21 +276,21 @@
                <children>
                   <GridPane hgap="10.0" GridPane.columnIndex="1">
                     <columnConstraints>
-                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="229.0" minWidth="10.0" prefWidth="219.0" />
-                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="10.0" prefWidth="72.0" />
-                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="102.66668701171875" minWidth="10.0" prefWidth="45.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="332.0" minWidth="10.0" prefWidth="332.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="102.66668701171875" minWidth="0.0" prefWidth="0.0" />
                     </columnConstraints>
                     <rowConstraints>
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <Button mnemonicParsing="false" text="บันทึกเป็น" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM" />
-                        <Button mnemonicParsing="false" text="พิมพ์" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM" />
-                        <Button fx:id="btn_view_report" mnemonicParsing="false" onAction="#viewReport" text="ดูรายงานประจำวัน" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM" />
+                        <Button fx:id="btn_view_report" mnemonicParsing="false" onAction="#viewReport" text="ดูรายงาน" GridPane.halignment="RIGHT" GridPane.valignment="BOTTOM" />
                      </children>
                   </GridPane>
                   <Button fx:id="btn_home" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goToHome" prefWidth="200.0" text="กลับหน้าแรก" GridPane.valignment="BOTTOM" />
                </children>
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
             </GridPane>
          </children>
       </GridPane>
