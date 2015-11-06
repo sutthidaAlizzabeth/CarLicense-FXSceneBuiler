@@ -212,13 +212,12 @@ public class DailyReportController implements Initializable {
     }
 
     @FXML
-    private void year(ActionEvent event) {
-        kind.setText("รายงานประจำปี");
-        input_date.setVisible(false);
-        show_month_year.setVisible(true);
-        input_month.setVisible(false);
-        input_year.setVisible(true);
-        input_year.setText("2015");
+    private void year(ActionEvent event) throws IOException {
+        Parent page = FXMLLoader.load(getClass().getResource("yearReport.fxml"));
+        Scene scene = new Scene(page);
+        Stage stage = (Stage) btn_home.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
     }
     
 }
