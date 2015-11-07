@@ -430,12 +430,12 @@
                   <Button fx:id="btn_next" disable="true" mnemonicParsing="false" onAction="#goToHistory" prefWidth="200.0" text="ขั้นตอนต่อไป " GridPane.columnIndex="3" />
                </children>
             </GridPane>
-            <Label text="ชื่อผู้ใช้: สุทธิดา" GridPane.halignment="RIGHT">
+            <Label text="ชื่อผู้ใช้: สุทธิดา" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
                <font>
                   <Font name="Arial Bold" size="18.0" />
                </font>
                <GridPane.margin>
-                  <Insets right="50.0" />
+                  <Insets right="50.0" top="10.0" />
                </GridPane.margin>
             </Label>
          </children>

@@ -65,6 +65,14 @@
                   <Insets bottom="150.0" />
                </GridPane.margin>
             </Button>
+            <Label text="ชื่อผู้ใช้: สุทธิดา" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="50.0" top="10.0" />
+               </GridPane.margin>
+            </Label>
          </children>
       </GridPane>
    </children>

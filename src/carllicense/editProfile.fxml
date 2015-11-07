@@ -456,12 +456,12 @@
                   <Button fx:id="btn_home" mnemonicParsing="false" onAction="#goToHome" prefWidth="200.0" text="กลับหน้าแรก " />
                </children>
             </GridPane>
-            <Label text="ชื่อผู้ใช้: สุทธิดา" GridPane.halignment="RIGHT">
+            <Label text="ชื่อผู้ใช้: สุทธิดา" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
                <font>
                   <Font name="Arial Bold" size="18.0" />
                </font>
                <GridPane.margin>
-                  <Insets right="50.0" />
+                  <Insets right="50.0" top="10.0" />
                </GridPane.margin>
             </Label>
          </children>
