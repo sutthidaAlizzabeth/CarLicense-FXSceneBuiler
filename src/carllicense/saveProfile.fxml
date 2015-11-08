@@ -177,8 +177,8 @@
                                  <children>
                                     <MenuButton fx:id="transaction_type" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#check" prefWidth="290.0" text="กรุณาเลือก" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                       <items>
-                                        <MenuItem mnemonicParsing="false" onAction="#new_card" text="ทำบัตรใหม่                                                        " />
-                                        <MenuItem mnemonicParsing="false" onAction="#re_card" text="ทำบัตรทดแทน" />
+                                        <MenuItem mnemonicParsing="false" onAction="#new_card" text="ออกบัตรใหม่                                                      " />
+                                        <MenuItem mnemonicParsing="false" onAction="#re_card" text="ออกบัตรทดแทน" />
                                           <MenuItem mnemonicParsing="false" onAction="#continue_card" text="ต่ออายุบัตร" />
                                       </items>
                                     </MenuButton>
