@@ -74,7 +74,7 @@
                   </MenuButton>
                   <GridPane fx:id="show_month_year" hgap="5.0" GridPane.columnIndex="2">
                      <children>
-                        <MenuButton fx:id="input_month" mnemonicParsing="false" prefHeight="25.0" prefWidth="212.0" text="พฤศจิกายน" GridPane.columnIndex="1">
+                        <MenuButton fx:id="input_month" mnemonicParsing="false" prefHeight="25.0" prefWidth="212.0" text="กุมภาพันธ์" GridPane.columnIndex="1">
                            <items>
                               <MenuItem mnemonicParsing="false" onAction="#setJan" text="มกราคม" />
                               <MenuItem mnemonicParsing="false" onAction="#setFeb" text="กุมภาพันธ์" />
@@ -187,17 +187,17 @@
                                 </rowConstraints>
                                  <children>
                                     <Label text="วันที่" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                    <Label layoutX="27.0" layoutY="18.0" text="ออกบัตรใหม่ (คน)" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                    <Label layoutX="102.0" layoutY="18.0" text="ออกบัตรทดแทน (คน)" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                    <Label layoutX="236.0" layoutY="18.0" text="ต่ออายุบัตร (คน)" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="27.0" layoutY="18.0" text="ออกบัตรใหม่ (รายการ)" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="102.0" layoutY="18.0" text="ออกบัตรทดแทน (รายการ)" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="236.0" layoutY="18.0" text="ต่ออายุบัตร (รายการ)" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                  </children>
                               </GridPane>
                               <GridPane layoutX="10.0" layoutY="10.0" style="-fx-background-color: #d7ddeb; -fx-border-color: #000000;" GridPane.columnIndex="1">
                                  <children>
                                     <Label text="วันที่" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                    <Label layoutX="27.0" layoutY="18.0" text="ออกบัตรใหม่ (คน)" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                    <Label layoutX="102.0" layoutY="18.0" text="ออกบัตรทดแทน (คน)" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                    <Label layoutX="236.0" layoutY="18.0" text="ต่ออายุบัตร (คน)" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="27.0" layoutY="18.0" text="ออกบัตรใหม่ (รายการ)" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="102.0" layoutY="18.0" text="ออกบัตรทดแทน (รายการ)" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="236.0" layoutY="18.0" text="ต่ออายุบัตร (รายการ)" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                  </children>
                                  <columnConstraints>
                                     <ColumnConstraints hgrow="SOMETIMES" maxWidth="115.0" minWidth="10.0" prefWidth="54.0" />
@@ -690,25 +690,28 @@
                                           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                        </rowConstraints>
                                     </GridPane>
-                                    <GridPane layoutX="10.0" layoutY="234.0" style="-fx-background-color: #E6E6E6;" GridPane.rowIndex="13">
+                                    <GridPane layoutX="11.0" layoutY="359.0" style="-fx-background-color: #E6E6E6;" GridPane.rowIndex="13">
                                        <children>
-                                          <Label text="วันเสาร์" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                          <Label text="29" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                       </children>
-                                       <columnConstraints>
-                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="237.0" minWidth="10.0" prefWidth="57.0" />
-                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="425.0" minWidth="10.0" prefWidth="425.0" />
-                                       </columnConstraints>
-                                       <rowConstraints>
-                                          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                                       </rowConstraints>
-                                    </GridPane>
-                                    <GridPane layoutX="11.0" layoutY="328.0" GridPane.rowIndex="14">
-                                       <children>
-                                          <Label text="30" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                          <Label text="1" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                          <Label layoutX="138.0" layoutY="18.0" text="3" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                          <Label layoutX="10.0" layoutY="18.0" text="3" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                          <Label text="รวม" underline="true" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label text="70" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="138.0" layoutY="18.0" text="62" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="10.0" layoutY="18.0" text="114" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                             <font>
+                                                <Font name="System Bold" size="13.0" />
+                                             </font>
+                                          </Label>
                                        </children>
                                        <columnConstraints>
                                           <ColumnConstraints hgrow="SOMETIMES" maxWidth="85.0" minWidth="10.0" prefWidth="57.0" />
