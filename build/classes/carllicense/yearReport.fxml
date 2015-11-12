@@ -168,72 +168,319 @@
                      <children>
                         <GridPane style="-fx-background-color: #d7ddeb; -fx-border-style: 1;">
                           <columnConstraints>
-                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="45.0" minWidth="10.0" prefWidth="15.0" />
-                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="125.0" minWidth="10.0" prefWidth="125.0" />
-                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="215.0" />
-                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="130.0" minWidth="10.0" />
-                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="85.44884872436523" minWidth="10.0" prefWidth="63.783390045166016" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="242.6125030517578" minWidth="10.0" prefWidth="174.21660995483398" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="240.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="240.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="240.0" />
                           </columnConstraints>
                           <rowConstraints>
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
                               <Label text="ลำดับที่" GridPane.halignment="CENTER" />
-                              <Label text="วันที่" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
-                              <Label text="รายการ" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
-                              <Label text="เลชประจำตัวประชาชน" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
-                              <Label text="รายละเอียด" GridPane.columnIndex="4" GridPane.halignment="CENTER" />
-                              <Label text="เจ้าหน้าที่" GridPane.columnIndex="5" GridPane.halignment="CENTER" />
+                              <Label text="เดือน" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                              <Label text="ออกบัตรใหม่ (รายการ)" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                              <Label text="ออกบัตรทดแทน (รายการ)" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
+                              <Label text="ต่ออายุบัตร (รายการ)" GridPane.columnIndex="4" GridPane.halignment="CENTER" />
                            </children>
                         </GridPane>
                         <GridPane GridPane.rowIndex="1">
                           <columnConstraints>
-                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="45.0" minWidth="10.0" prefWidth="100.0" />
-                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="128.0" minWidth="10.0" prefWidth="128.0" />
-                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="212.0" />
-                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="130.0" minWidth="10.0" />
-                              <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                           </columnConstraints>
                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                             <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <Label text="1" GridPane.halignment="CENTER" />
-                              <Label text="9/2/2015 10.05 น." GridPane.columnIndex="1" GridPane.halignment="CENTER" />
-                              <Label text="ทำบัตรใหม่" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
-                              <Label text="1101500764307" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
-                              <Label text="ใบอนุญาตขับรถยนต์ชั่วคราว" GridPane.columnIndex="4" GridPane.halignment="CENTER" />
-                              <Label text="สุทธิดา" GridPane.columnIndex="5" GridPane.halignment="CENTER" />
-                              <Label text="สุทธิดา" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                              <Label text="ใบอนุญาตขับรถยนต์ส่วนบุคคล" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                              <Label text="1101300764127" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                              <Label text="ทำบัตรใหม่" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                              <Label text="9/8/2015 10.05 น." GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                              <Label text="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
-                              <Label text="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-                              <Label text="11/1/2015 10.05 น." GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-                              <Label text="ต่ออายุบัตร" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-                              <Label text="1101500764377" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-                              <Label text="ใบอนุญาตขับรถยนต์ส่วนบุคคล" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
-                              <Label text="สุทธิดา" GridPane.columnIndex="5" GridPane.halignment="CENTER" GridPane.rowIndex="2" />
+                              <GridPane>
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.99444580078125" minWidth="10.0" prefWidth="70.11875915527344" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="411.44505310058594" minWidth="10.0" prefWidth="185.10333251953125" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="240.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="5.28411865234375" prefWidth="240.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="240.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label text="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="43.0" layoutY="20.0" text="มกราคม" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="154.0" layoutY="20.0" text="32" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="383.0" layoutY="20.0" text="23" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="624.0" layoutY="20.0" text="52" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                 </children>
+                              </GridPane>
+                              <GridPane layoutX="10.0" layoutY="10.0" style="-fx-background-color: #E6E6E6;" GridPane.rowIndex="1">
+                                 <children>
+                                    <Label text="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="43.0" layoutY="20.0" text="กุมภาพันธ์" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="154.0" layoutY="20.0" text="41" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="383.0" layoutY="20.0" text="23" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="624.0" layoutY="20.0" text="21" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.99444580078125" minWidth="10.0" prefWidth="70.11875915527344" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="411.44505310058594" minWidth="10.0" prefWidth="185.10333251953125" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="240.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="5.28411865234375" prefWidth="240.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="240.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <GridPane layoutX="10.0" layoutY="47.0" style="-fx-background-color: #E6E6E6;" GridPane.rowIndex="3">
+                                 <children>
+                                    <Label text="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="43.0" layoutY="20.0" text="เมษายน" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="154.0" layoutY="20.0" text="85" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="383.0" layoutY="20.0" text="20" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="624.0" layoutY="20.0" text="93" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.99444580078125" minWidth="10.0" prefWidth="70.11875915527344" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="411.44505310058594" minWidth="10.0" prefWidth="185.10333251953125" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="240.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="5.28411865234375" prefWidth="240.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="240.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <GridPane layoutX="10.0" layoutY="10.0" GridPane.rowIndex="2">
+                                 <children>
+                                    <Label text="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="43.0" layoutY="20.0" text="มีนาคม" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="154.0" layoutY="20.0" text="64" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="383.0" layoutY="20.0" text="82" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="624.0" layoutY="20.0" text="48" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.99444580078125" minWidth="10.0" prefWidth="70.11875915527344" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="411.44505310058594" minWidth="10.0" prefWidth="185.10333251953125" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="240.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="5.28411865234375" prefWidth="240.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="240.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <GridPane layoutX="10.0" layoutY="84.0" GridPane.rowIndex="4">
+                                 <children>
+                                    <Label text="5" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="43.0" layoutY="20.0" text="พฤษภาคม" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="154.0" layoutY="20.0" text="64" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="383.0" layoutY="20.0" text="82" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="624.0" layoutY="20.0" text="48" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.99444580078125" minWidth="10.0" prefWidth="70.11875915527344" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="411.44505310058594" minWidth="10.0" prefWidth="185.10333251953125" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="240.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="5.28411865234375" prefWidth="240.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="240.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <GridPane layoutX="10.0" layoutY="121.0" style="-fx-background-color: #E6E6E6;" GridPane.rowIndex="5">
+                                 <children>
+                                    <Label text="6" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="43.0" layoutY="20.0" text="มิถุนาน" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="154.0" layoutY="20.0" text="65" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="383.0" layoutY="20.0" text="35" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="624.0" layoutY="20.0" text="39" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.99444580078125" minWidth="10.0" prefWidth="70.11875915527344" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="411.44505310058594" minWidth="10.0" prefWidth="185.10333251953125" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="240.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="5.28411865234375" prefWidth="240.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="240.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <GridPane layoutX="10.0" layoutY="158.0" GridPane.rowIndex="6">
+                                 <children>
+                                    <Label text="7" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="43.0" layoutY="20.0" text="กรกฎาคม" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="154.0" layoutY="20.0" text="83" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="383.0" layoutY="20.0" text="25" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="624.0" layoutY="20.0" text="82" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.99444580078125" minWidth="10.0" prefWidth="70.11875915527344" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="411.44505310058594" minWidth="10.0" prefWidth="185.10333251953125" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="240.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="5.28411865234375" prefWidth="240.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="240.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <GridPane layoutX="10.0" layoutY="195.0" style="-fx-background-color: #E6E6E6;" GridPane.rowIndex="7">
+                                 <children>
+                                    <Label text="8" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="43.0" layoutY="20.0" text="สิงหาคม" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="154.0" layoutY="20.0" text="62" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="383.0" layoutY="20.0" text="53" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="624.0" layoutY="20.0" text="19" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.99444580078125" minWidth="10.0" prefWidth="70.11875915527344" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="411.44505310058594" minWidth="10.0" prefWidth="185.10333251953125" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="240.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="5.28411865234375" prefWidth="240.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="240.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <GridPane layoutX="10.0" layoutY="232.0" GridPane.rowIndex="8">
+                                 <children>
+                                    <Label text="9" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="43.0" layoutY="20.0" text="กันยายน" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="154.0" layoutY="20.0" text="37" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="383.0" layoutY="20.0" text="92" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="624.0" layoutY="20.0" text="18" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.99444580078125" minWidth="10.0" prefWidth="70.11875915527344" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="411.44505310058594" minWidth="10.0" prefWidth="185.10333251953125" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="240.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="5.28411865234375" prefWidth="240.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="240.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <GridPane layoutX="10.0" layoutY="268.0" style="-fx-background-color: #E6E6E6;" GridPane.rowIndex="9">
+                                 <children>
+                                    <Label text="10" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="43.0" layoutY="20.0" text="ตุลาคม" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="154.0" layoutY="20.0" text="28" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="383.0" layoutY="20.0" text="75" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="624.0" layoutY="20.0" text="84" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.99444580078125" minWidth="10.0" prefWidth="70.11875915527344" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="411.44505310058594" minWidth="10.0" prefWidth="185.10333251953125" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="240.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="5.28411865234375" prefWidth="240.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="240.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <GridPane layoutX="10.0" layoutY="304.0" GridPane.rowIndex="10">
+                                 <children>
+                                    <Label text="11" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="43.0" layoutY="20.0" text="พฤศจิกายน" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="154.0" layoutY="20.0" text="79" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="383.0" layoutY="20.0" text="69" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="624.0" layoutY="20.0" text="73" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.99444580078125" minWidth="10.0" prefWidth="70.11875915527344" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="411.44505310058594" minWidth="10.0" prefWidth="185.10333251953125" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="240.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="5.28411865234375" prefWidth="240.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="240.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <GridPane layoutX="10.0" layoutY="340.0" style="-fx-background-color: #E6E6E6;" GridPane.rowIndex="11">
+                                 <children>
+                                    <Label text="12" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="43.0" layoutY="20.0" text="ธันวาคม" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="154.0" layoutY="20.0" text="83" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="383.0" layoutY="20.0" text="96" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="624.0" layoutY="20.0" text="27" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.99444580078125" minWidth="10.0" prefWidth="70.11875915527344" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="411.44505310058594" minWidth="10.0" prefWidth="185.10333251953125" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="240.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="5.28411865234375" prefWidth="240.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="240.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                              <GridPane layoutX="10.0" layoutY="376.0" GridPane.rowIndex="12">
+                                 <children>
+                                    <Label layoutX="43.0" layoutY="20.0" text="รวม" underline="true" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="154.0" layoutY="20.0" text="723" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="383.0" layoutY="20.0" text="675" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="624.0" layoutY="20.0" text="604" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                                       <font>
+                                          <Font name="System Bold" size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.99444580078125" minWidth="10.0" prefWidth="70.11875915527344" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="411.44505310058594" minWidth="10.0" prefWidth="185.10333251953125" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="240.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="5.28411865234375" prefWidth="240.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="328.0" minWidth="10.0" prefWidth="240.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
                            </children>
                         </GridPane>
                      </children>
                   </GridPane>
                </children>
             </GridPane>
+            <Label text="ชื่อผู้ใช้: สุทธิดา" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets right="50.0" top="10.0" />
+               </GridPane.margin>
+            </Label>
          </children>
       </GridPane>
    </children>

@@ -199,7 +199,6 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <DatePicker fx:id="input_date" onAction="#inputDate" promptText="11/06/2015" GridPane.columnIndex="2" />
                   <Label text="ประเภท" GridPane.halignment="RIGHT">
                      <font>
                         <Font name="Arial Bold" size="18.0" />
@@ -263,6 +262,7 @@
                         <Button mnemonicParsing="false" text="บันทึกเป็น" GridPane.columnIndex="3" GridPane.halignment="LEFT" />
                      </children>
                   </GridPane>
+                  <DatePicker GridPane.columnIndex="2" />
                </children>
             </GridPane>
             <GridPane prefHeight="43.0" prefWidth="984.0" GridPane.rowIndex="3">

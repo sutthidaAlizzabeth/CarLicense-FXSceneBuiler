@@ -177,8 +177,8 @@
                                  <children>
                                     <MenuButton fx:id="transaction_type" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#check" prefWidth="290.0" text="กรุณาเลือก" GridPane.columnIndex="1" GridPane.rowIndex="1">
                                       <items>
-                                        <MenuItem mnemonicParsing="false" onAction="#new_card" text="ทำบัตรใหม่                                                        " />
-                                        <MenuItem mnemonicParsing="false" onAction="#re_card" text="ทำบัตรทดแทน" />
+                                        <MenuItem mnemonicParsing="false" onAction="#new_card" text="ออกบัตรใหม่                                                      " />
+                                        <MenuItem mnemonicParsing="false" onAction="#re_card" text="ออกบัตรทดแทน" />
                                           <MenuItem mnemonicParsing="false" onAction="#continue_card" text="ต่ออายุบัตร" />
                                       </items>
                                     </MenuButton>
@@ -429,12 +429,12 @@
                   <Button fx:id="btn_pre" mnemonicParsing="false" onAction="#goToHistory" prefWidth="200.0" text="ย้อนกลับ" GridPane.columnIndex="3" />
                </children>
             </GridPane>
-            <Label text="ชื่อผู้ใช้: สุทธิดา" GridPane.halignment="RIGHT">
+            <Label text="ชื่อผู้ใช้: สุทธิดา" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
                <font>
                   <Font name="Arial Bold" size="18.0" />
                </font>
                <GridPane.margin>
-                  <Insets right="50.0" />
+                  <Insets right="50.0" top="10.0" />
                </GridPane.margin>
             </Label>
          </children>
