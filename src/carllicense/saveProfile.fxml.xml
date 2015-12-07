@@ -9,14 +9,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" depthTest="DISABLE" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carllicense.licenseController">
+<AnchorPane id="AnchorPane" depthTest="DISABLE" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carllicense.SaveProfileController">
    <children>
       <MenuBar prefHeight="29.0" prefWidth="1024.0">
          <menus>
             <Menu mnemonicParsing="false" text="ไฟล​์">
                <items>
-                  <MenuItem mnemonicParsing="false" onAction="#logout" text="ออกจากระบบ" />
-                  <MenuItem mnemonicParsing="false" onAction="#exit" text="ปิดโปรแกรม" />
+                  <MenuItem mnemonicParsing="false" text="ออกจากระบบ" />
+                  <MenuItem mnemonicParsing="false" text="ปิดโปรแกรม" />
                </items>
             </Menu>
             <Menu mnemonicParsing="false" text="ช่วยเหลือ">
@@ -34,14 +34,13 @@
           <ColumnConstraints hgrow="SOMETIMES" maxWidth="1024.0" minWidth="10.0" prefWidth="768.0" />
         </columnConstraints>
         <rowConstraints>
-            <RowConstraints maxHeight="217.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
-          <RowConstraints maxHeight="217.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="217.0" minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
           <RowConstraints maxHeight="624.0" minHeight="10.0" prefHeight="83.0" vgrow="SOMETIMES" />
             <RowConstraints maxHeight="624.0" minHeight="10.0" prefHeight="484.0" vgrow="SOMETIMES" />
           <RowConstraints maxHeight="249.0" minHeight="10.0" prefHeight="88.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <GridPane prefHeight="80.0" prefWidth="966.0" GridPane.rowIndex="1">
+            <GridPane prefHeight="80.0" prefWidth="966.0">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
               </columnConstraints>
@@ -59,16 +58,29 @@
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="รหัสประจำตัวประชาชน  1101500764377" GridPane.columnIndex="1" GridPane.valignment="BOTTOM">
+                        <Label text="รหัสประจำตัวประชาชน: " GridPane.halignment="RIGHT">
                            <font>
-                              <Font name="Arial Bold" size="18.0" />
+                              <Font name="Arial" size="18.0" />
                            </font>
-                        </Text>
+                        </Label>
+                        <TextField prefHeight="33.0" prefWidth="200.0" promptText="1234567890123" GridPane.columnIndex="1">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                        </TextField>
+                        <Button mnemonicParsing="false" text="แสดงประวัติ" GridPane.columnIndex="2">
+                           <font>
+                              <Font name="Arial" size="18.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets left="10.0" />
+                           </GridPane.margin>
+                        </Button>
                      </children>
                   </GridPane>
                </children>
             </GridPane>
-            <GridPane maxHeight="-Infinity" minHeight="-Infinity" prefHeight="50.0" GridPane.rowIndex="2">
+            <GridPane GridPane.rowIndex="1">
               <columnConstraints>
                 <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                   <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -78,54 +90,12 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <GridPane onMouseClicked="#goToProfile" style="-fx-background-color: #3f92d2;">
-                     <children>
-                        <Text fill="#f5f5f559" onMouseClicked="#goToProfile" strokeType="OUTSIDE" strokeWidth="0.0" text="1. ตรวจประวัติ" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
-                           <font>
-                              <Font name="Arial" size="18.0" />
-                           </font>
-                        </Text>
-                     </children>
-                     <columnConstraints>
-                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                     </columnConstraints>
-                     <rowConstraints>
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                     </rowConstraints>
-                  </GridPane>
-                  <GridPane style="-fx-background-color: #3f92d2;" GridPane.columnIndex="1">
-                     <children>
-                        <Text fill="#f5f5f559" strokeType="OUTSIDE" strokeWidth="0.0" text="2. ประวัติใบขับขี่" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
-                           <font>
-                              <Font name="Arial" size="18.0" />
-                           </font>
-                        </Text>
-                     </children>
-                     <columnConstraints>
-                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                     </columnConstraints>
-                     <rowConstraints>
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                     </rowConstraints>
-                  </GridPane>
-                  <GridPane style="-fx-background-color: #3f92d2;" GridPane.columnIndex="2">
-                     <children>
-                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="3. บันทึกการทำใบขับขี่" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
-                           <font>
-                              <Font name="Arial" size="18.0" />
-                           </font>
-                        </Text>
-                     </children>
-                     <columnConstraints>
-                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
-                     </columnConstraints>
-                     <rowConstraints>
-                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                     </rowConstraints>
-                  </GridPane>
+                  <Button mnemonicParsing="false" prefWidth="200.0" text="3 บันทึกการทำใบขับขี่ " GridPane.columnIndex="2" />
+                  <Button mnemonicParsing="false" prefWidth="200.0" text="2 ประวัติการทำใบขับขี่ " GridPane.columnIndex="1" />
+                  <Button mnemonicParsing="false" prefWidth="200.0" text="1 ตรวจสอบประวัติ" />
                </children>
             </GridPane>
-            <GridPane style="-fx-background-color: #d7ddeb;" GridPane.rowIndex="3">
+            <GridPane style="-fx-background-color: #d7ddeb;" GridPane.rowIndex="2">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
               </columnConstraints>
@@ -141,9 +111,9 @@
                       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                     </columnConstraints>
                     <rowConstraints>
-                      <RowConstraints maxHeight="183.0" minHeight="10.0" prefHeight="101.0" vgrow="SOMETIMES" />
-                      <RowConstraints maxHeight="153.0" minHeight="10.0" prefHeight="45.0" vgrow="SOMETIMES" />
-                      <RowConstraints maxHeight="298.0" minHeight="10.0" prefHeight="294.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="183.0" minHeight="10.0" prefHeight="146.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="153.0" minHeight="10.0" prefHeight="49.0" vgrow="SOMETIMES" />
+                      <RowConstraints maxHeight="265.6666564941406" minHeight="10.0" prefHeight="246.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
                         <GridPane hgap="25.0">
@@ -160,29 +130,22 @@
                                     <Image url="@116833916%20(1).jpg" />
                                  </image>
                                  <GridPane.margin>
-                                    <Insets left="90.0" top="20.0" />
+                                    <Insets left="70.0" />
                                  </GridPane.margin>
                               </ImageView>
-                              <GridPane hgap="20.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="120.0" prefWidth="660.0" style="-fx-background-color: #FAF2F1;">
+                              <GridPane hgap="20.0" prefHeight="183.0" prefWidth="676.0" style="-fx-background-color: #FAF2F1;">
                                 <columnConstraints>
                                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                                 </columnConstraints>
                                 <rowConstraints>
-                                    <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="2.0" vgrow="SOMETIMES" />
-                                  <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
-                                    <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
-                                    <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="2.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                 </rowConstraints>
                                  <children>
-                                    <MenuButton fx:id="transaction_type" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#check" prefWidth="290.0" text="กรุณาเลือก" GridPane.columnIndex="1" GridPane.rowIndex="1">
-                                      <items>
-                                        <MenuItem mnemonicParsing="false" onAction="#new_card" text="ออกบัตรใหม่                                                      " />
-                                        <MenuItem mnemonicParsing="false" onAction="#re_card" text="ออกบัตรทดแทน" />
-                                          <MenuItem mnemonicParsing="false" onAction="#continue_card" text="ต่ออายุบัตร" />
-                                      </items>
-                                    </MenuButton>
-                                    <Label text="รูปแบบการทำรายการ:" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                    <Label text="รูปแบบการทำรายการ:" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
                                        <font>
                                           <Font name="Arial" size="16.0" />
                                        </font>
@@ -192,36 +155,16 @@
                                           <Font name="Arial" size="16.0" />
                                        </font>
                                     </Label>
-                                    <MenuButton fx:id="license_type" layoutX="10.0" layoutY="2.0" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#check" prefWidth="290.0" text="กรุณาเลือก" GridPane.columnIndex="1" GridPane.rowIndex="2">
-                                       <items>
-                                          <MenuItem mnemonicParsing="false" onAction="#li_car_time" text="ใบอนุญาติขับรถยนต์ชั่วคราว" />
-                                          <MenuItem mnemonicParsing="false" onAction="#li_trycycle_time" text="ใบอนุญาติขับรถยนต์สามล้อชั่วคราว" />
-                                          <MenuItem mnemonicParsing="false" onAction="#li_moter_time" text="ใบอนุญาติขับรถจักรยานยนต์ส่วนบุคคลชั่วคราว    " />
-                                          <SeparatorMenuItem mnemonicParsing="false" />
-                                          <MenuItem mnemonicParsing="false" onAction="#li_car" text="ใบอนุญาตขับรถยนต์ส่วนบุคคล" />
-                                          <MenuItem mnemonicParsing="false" onAction="#li_trycycle" text="ใบอนุญาตขับรถยนต์สามล้อส่วนบุคคล" />
-                                          <MenuItem mnemonicParsing="false" onAction="#li_moter" text="ใบอนุญาตขับรถจักรยานยนต์ส่วนบุคคล" />
-                                          <SeparatorMenuItem mnemonicParsing="false" />
-                                          <MenuItem mnemonicParsing="false" onAction="#li_car_public" text="ใบอนุญาตขับรถยนต์สาธารณะ" />
-                                          <MenuItem mnemonicParsing="false" onAction="#li_trycycle_public" text="ใบอนุญาตขับรถยนต์สามล้อสาธารณะ" />
-                                          <MenuItem mnemonicParsing="false" onAction="#li_moter_public" text="ใบอนุญาตขับรถจักรยานยนต์สาธารณะ     " />
-                                          <SeparatorMenuItem mnemonicParsing="false" />
-                                          <MenuItem mnemonicParsing="false" onAction="#li_road" text="ใบอนุญาตขับรถบดถนน" />
-                                          <MenuItem mnemonicParsing="false" onAction="#li_track" text="ใบอนุญาตขับรถแทรกเตอร์" />
-                                          <SeparatorMenuItem mnemonicParsing="false" />
-                                          <MenuItem mnemonicParsing="false" onAction="#li_other" text="ใบอนุญาตขับรถชนิดอื่น" />
-                                          <SeparatorMenuItem mnemonicParsing="false" />
-                                          <MenuItem mnemonicParsing="false" onAction="#li_foriegn" text="ใบอนุญาตขับรถระหว่างประเทศ" />
-                                       </items>
-                                    </MenuButton>
+                                    <ComboBox prefWidth="230.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <ComboBox prefWidth="230.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
                                  </children>
                                  <GridPane.margin>
-                                    <Insets top="10.0" />
+                                    <Insets left="25.0" />
                                  </GridPane.margin>
                               </GridPane>
                            </children>
                            <GridPane.margin>
-                              <Insets />
+                              <Insets top="25.0" />
                            </GridPane.margin>
                         </GridPane>
                         <Label text="ผลการทดสอบ" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
@@ -229,23 +172,23 @@
                               <Font name="Arial Bold" size="18.0" />
                            </font>
                            <GridPane.margin>
-                              <Insets bottom="5.0" />
+                              <Insets bottom="5.0" left="25.0" />
                            </GridPane.margin>
                         </Label>
                         <GridPane hgap="15.0" style="-fx-background-color: #FAF2F1;" GridPane.rowIndex="2">
                           <columnConstraints>
-                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="465.3333435058594" minWidth="10.0" prefWidth="191.0" />
-                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="759.0" minWidth="10.0" prefWidth="738.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="465.3333435058594" minWidth="10.0" prefWidth="260.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="684.0" minWidth="10.0" prefWidth="684.0" />
                           </columnConstraints>
                           <rowConstraints>
                               <RowConstraints maxHeight="17.333343505859375" minHeight="10.0" prefHeight="13.333343505859375" vgrow="SOMETIMES" />
-                            <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
-                            <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
-                            <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
-                              <RowConstraints minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
-                              <RowConstraints maxHeight="40.0" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
-                              <RowConstraints maxHeight="32.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES" />
-                              <RowConstraints maxHeight="37.0" minHeight="10.0" prefHeight="37.0" vgrow="SOMETIMES" />
+                            <RowConstraints maxHeight="34.666656494140625" minHeight="10.0" prefHeight="34.666656494140625" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
                               <RowConstraints minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
@@ -302,27 +245,27 @@
                               </Label>
                               <GridPane GridPane.columnIndex="1" GridPane.rowIndex="3">
                                  <children>
-                                    <RadioButton fx:id="practical_yes" mnemonicParsing="false" onAction="#practicalYes" text="ผ่าน">
+                                    <RadioButton mnemonicParsing="false" text="ผ่าน">
                                        <font>
                                           <Font name="Arial" size="16.0" />
                                        </font>
                                     </RadioButton>
-                                    <RadioButton fx:id="practical_no" mnemonicParsing="false" onAction="#practicalNo" prefHeight="22.0" prefWidth="83.0" text="ไม่ผ่าน" GridPane.columnIndex="1">
+                                    <RadioButton mnemonicParsing="false" prefHeight="22.0" prefWidth="83.0" text="ไม่ผ่าน" GridPane.columnIndex="1">
                                        <font>
                                           <Font name="Arial" size="16.0" />
                                        </font>
                                     </RadioButton>
-                                    <GridPane fx:id="practical_no_result" visible="false" GridPane.columnIndex="2">
+                                    <GridPane GridPane.columnIndex="2">
                                       <columnConstraints>
-                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="198.0" minWidth="10.0" prefWidth="155.0" />
-                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="213.0" minWidth="10.0" prefWidth="201.0" />
-                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.33331298828125" minWidth="10.0" prefWidth="139.0" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="172.66668701171875" minWidth="10.0" prefWidth="141.66668701171875" />
+                                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="206.0" minWidth="10.0" prefWidth="159.33331298828125" />
+                                          <ColumnConstraints hgrow="SOMETIMES" maxWidth="219.33331298828125" minWidth="10.0" prefWidth="219.33331298828125" />
                                       </columnConstraints>
                                       <rowConstraints>
                                         <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                       </rowConstraints>
                                        <children>
-                                          <Label prefHeight="20.0" prefWidth="184.0" text="(สอบปฏิบัติอีกครั้งวันที่">
+                                          <Label text="(สอบปฏิบัติอีกครั้งวันที่">
                                              <font>
                                                 <Font name="Arial" size="16.0" />
                                              </font>
@@ -345,15 +288,15 @@
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                  </rowConstraints>
                               </GridPane>
-                              <DatePicker fx:id="practical_date" onAction="#check" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <DatePicker GridPane.columnIndex="1" GridPane.rowIndex="4" />
                               <GridPane GridPane.columnIndex="1" GridPane.rowIndex="5">
                                  <children>
-                                    <RadioButton fx:id="response_yes" mnemonicParsing="false" onAction="#responseYes" text="ผ่าน">
+                                    <RadioButton mnemonicParsing="false" text="ผ่าน">
                                        <font>
                                           <Font name="Arial" size="16.0" />
                                        </font>
                                     </RadioButton>
-                                    <RadioButton fx:id="response_no" mnemonicParsing="false" onAction="#responseNo" prefHeight="22.0" prefWidth="80.0" text="ไม่ผ่าน" GridPane.columnIndex="1">
+                                    <RadioButton mnemonicParsing="false" prefHeight="22.0" prefWidth="80.0" text="ไม่ผ่าน" GridPane.columnIndex="1">
                                        <font>
                                           <Font name="Arial" size="16.0" />
                                        </font>
@@ -367,7 +310,7 @@
                                     <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                  </rowConstraints>
                               </GridPane>
-                              <Label fx:id="free" text="ค่าธรรมเนียม 105 บาท" visible="false" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="6">
+                              <Label text="ค่าธรรมเนียม 105 บาท" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="6">
                                  <font>
                                     <Font name="Arial Bold" size="16.0" />
                                  </font>
@@ -375,7 +318,7 @@
                                     <Insets right="55.0" />
                                  </GridPane.margin>
                               </Label>
-                              <Button fx:id="btn_save" disable="true" mnemonicParsing="false" text="บันทึก" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="7">
+                              <Button mnemonicParsing="false" text="บันทึก" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="7">
                                  <GridPane.margin>
                                     <Insets right="55.0" />
                                  </GridPane.margin>
@@ -404,7 +347,7 @@
                               </GridPane>
                            </children>
                            <GridPane.margin>
-                              <Insets />
+                              <Insets bottom="25.0" left="25.0" right="25.0" />
                            </GridPane.margin>
                         </GridPane>
                      </children>
@@ -414,7 +357,7 @@
                   </GridPane>
                </children>
             </GridPane>
-            <GridPane GridPane.rowIndex="4">
+            <GridPane GridPane.rowIndex="3">
               <columnConstraints>
                 <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
@@ -425,18 +368,15 @@
                 <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
               </rowConstraints>
                <children>
-                  <Button fx:id="btn_home" mnemonicParsing="false" onAction="#goToHome" prefWidth="200.0" text="กลับหน้าแรก " />
-                  <Button fx:id="btn_pre" mnemonicParsing="false" onAction="#goToHistory" prefWidth="200.0" text="ย้อนกลับ" GridPane.columnIndex="3" />
+                  <Button mnemonicParsing="false" prefWidth="200.0" text="กลับหน้าแรก " />
+                  <Button mnemonicParsing="false" prefWidth="200.0" text="ย้อนกลับ" GridPane.columnIndex="2">
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" prefWidth="200.0" text="ขั้นตอนต่อไป " GridPane.columnIndex="3" />
                </children>
             </GridPane>
-            <Label text="ชื่อผู้ใช้: สุทธิดา" GridPane.halignment="RIGHT" GridPane.valignment="TOP">
-               <font>
-                  <Font name="Arial Bold" size="18.0" />
-               </font>
-               <GridPane.margin>
-                  <Insets right="50.0" top="10.0" />
-               </GridPane.margin>
-            </Label>
          </children>
       </GridPane>
    </children>
