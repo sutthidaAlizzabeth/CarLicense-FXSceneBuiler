@@ -98,21 +98,14 @@
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="1. ตรวจประวัติ" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="แก้ไขข้อมูล" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                            <font>
-                              <Font name="Arial" size="18.0" />
+                              <Font name="Arial Bold" size="36.0" />
                            </font>
                         </Text>
                      </children>
                   </GridPane>
                   <GridPane layoutX="10.0" layoutY="10.0" onMouseClicked="#goToHistory" style="-fx-background-color: #3f92d2;" GridPane.columnIndex="1">
-                     <children>
-                        <Text fill="#f5f5f559" onMouseClicked="#goToHistory" strokeType="OUTSIDE" strokeWidth="0.0" text="2. ประวัติใบขับขี่" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
-                           <font>
-                              <Font name="Arial" size="18.0" />
-                           </font>
-                        </Text>
-                     </children>
                      <columnConstraints>
                         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
                      </columnConstraints>
@@ -122,7 +115,7 @@
                   </GridPane>
                   <GridPane layoutX="332.0" layoutY="10.0" style="-fx-background-color: #3f92d2;" GridPane.columnIndex="2">
                      <children>
-                        <Text fill="#ffffff5a" strokeType="OUTSIDE" strokeWidth="0.0" text="3. บันทึกการทำใบขับขี่" textAlignment="CENTER" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                        <Text fill="#ffffff5a" strokeType="OUTSIDE" strokeWidth="0.0" text="3. บันทึกการทำใบขับขี่" textAlignment="CENTER" visible="false" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                            <font>
                               <Font name="Arial" size="18.0" />
                            </font>

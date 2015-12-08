@@ -272,7 +272,7 @@
                               <Insets top="20.0" />
                            </GridPane.margin>
                         </GridPane>
-                        <Button fx:id="data_btn" mnemonicParsing="false" onAction="#goToEdit" text="แก้ไขข้อมูล" GridPane.columnIndex="1" GridPane.halignment="RIGHT" />
+                        <Button fx:id="data_btn" mnemonicParsing="false" onAction="#goToEdit" prefHeight="35.0" prefWidth="68.0" text="แก้ไขข้อมูล" GridPane.columnIndex="1" GridPane.halignment="RIGHT" />
                         <Text fx:id="result" fill="RED" strokeType="OUTSIDE" strokeWidth="0.0" text="กรุณากรอกรหัสประจำตัวประชาชน" visible="false" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
                            <font>
                               <Font name="Arial Bold" size="18.0" />
