@@ -278,7 +278,6 @@
                                           <MenuItem disable="true" mnemonicParsing="false" onAction="#li_trycycle_public" text="ใบอนุญาตขับรถยนต์สามล้อสาธารณะ" />
                                           <MenuItem disable="true" mnemonicParsing="false" onAction="#li_moter_public" text="ใบอนุญาตขับรถจักรยานยนต์สาธารณะ" />
                                           <SeparatorMenuItem mnemonicParsing="false" />
-                                          <MenuItem disable="true" mnemonicParsing="false" onAction="#li_road" text="ใบอนุญาตขับรถบดถนน" />
                                           <MenuItem disable="true" mnemonicParsing="false" onAction="#li_track" text="ใบอนุญาตขับรถแทรกเตอร์" />
                                           <SeparatorMenuItem mnemonicParsing="false" />
                                           <MenuItem disable="true" mnemonicParsing="false" onAction="#li_other" text="ใบอนุญาตขับรถชนิดอื่น" />
