@@ -69,6 +69,9 @@ public class LicenseProfileController implements Initializable {
     private Text result;
     @FXML
     private Button btn_pre;
+    
+    @FXML
+    private Button btn_back;
 
     /**
      * Initializes the controller class.
@@ -155,6 +158,16 @@ public class LicenseProfileController implements Initializable {
 
     @FXML
     private void li_foriegn(ActionEvent event) {
+    }
+    
+    
+    @FXML
+    private void goToMenu2(ActionEvent event) throws IOException{
+        Parent page = FXMLLoader.load(getClass().getResource("menuSelect2.fxml"));
+        Scene scene = new Scene(page);
+        Stage stage = (Stage) btn_back.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
     }
 
 }

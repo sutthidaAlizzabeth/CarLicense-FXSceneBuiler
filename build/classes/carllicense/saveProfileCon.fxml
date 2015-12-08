@@ -206,7 +206,7 @@
                                           <MenuItem mnemonicParsing="false" onAction="#li_foriegn" text="ใบอนุญาตขับรถระหว่างประเทศ" />
                                        </items>
                                     </MenuButton>
-                                    <Label layoutX="182.0" layoutY="35.0" text="ออกบัตรใหม่" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                    <Label layoutX="182.0" layoutY="35.0" text="ออกบัตรทดแทน" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                                        <font>
                                           <Font name="Arial" size="16.0" />
                                        </font>
@@ -348,7 +348,7 @@
               </rowConstraints>
                <children>
                   <Button fx:id="btn_home" mnemonicParsing="false" onAction="#goToHome" prefWidth="200.0" text="กลับหน้าแรก " />
-                  <Button fx:id="btn_back" mnemonicParsing="false" onAction="#goToHistory" prefWidth="200.0" text="ย้อนกลับ" GridPane.columnIndex="2" />
+                  <Button fx:id="btn_back" mnemonicParsing="false" onAction="#goToHistoryCon" prefWidth="200.0" text="ย้อนกลับ" GridPane.columnIndex="2" />
                   <Button fx:id="btn_pay" layoutX="544.0" layoutY="38.0" mnemonicParsing="false" prefWidth="200.0" text="ชำระค่าธรรมเนียม" GridPane.columnIndex="3" />
                </children>
             </GridPane>

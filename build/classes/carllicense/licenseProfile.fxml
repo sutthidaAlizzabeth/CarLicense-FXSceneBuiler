@@ -243,9 +243,10 @@
                               <RowConstraints maxHeight="75.33331298828125" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
                               <RowConstraints maxHeight="97.33331298828125" minHeight="10.0" prefHeight="41.0" vgrow="SOMETIMES" />
                               <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="44.3333740234375" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="70.0" minHeight="10.0" prefHeight="44.3333740234375" vgrow="SOMETIMES" />
                           </rowConstraints>
                            <children>
-                              <Label text="ประเภท :" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+                              <Label text="ประเภท:" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
                                  <font>
                                     <Font name="Arial" size="16.0" />
                                  </font>
@@ -293,22 +294,22 @@
                                     <Insets top="10.0" />
                                  </GridPane.margin>
                               </GridPane>
-                              <Label text="ฉบับที่ :" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+                              <Label text="ฉบับที่:" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
                                  <font>
                                     <Font name="Arial" size="16.0" />
                                  </font>
                               </Label>
-                              <Label text="จังหวัดที่ออก :" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+                              <Label text="จังหวัดที่ออก:" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
                                  <font>
                                     <Font name="Arial" size="16.0" />
                                  </font>
                               </Label>
-                              <Label text="วันที่ออกบัตร :" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+                              <Label text="วันที่ออกบัตร:" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
                                  <font>
                                     <Font name="Arial" size="16.0" />
                                  </font>
                               </Label>
-                              <Label text="วันหมดอายุ :" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
+                              <Label text="วันหมดอายุ:" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
                                  <font>
                                     <Font name="Arial" size="16.0" />
                                  </font>
@@ -334,6 +335,16 @@
                                  </font>
                               </Label>
                               <Label text="1 พฤศจิกายน 2559" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font name="Arial" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="225.0" layoutY="173.0" text="สถานะใบขับขี่:" GridPane.halignment="RIGHT" GridPane.rowIndex="6" GridPane.valignment="CENTER">
+                                 <font>
+                                    <Font name="Arial" size="16.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="330.0" layoutY="173.0" text="หมดอายุ" GridPane.columnIndex="1" GridPane.rowIndex="6">
                                  <font>
                                     <Font name="Arial" size="16.0" />
                                  </font>

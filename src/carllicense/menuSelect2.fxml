@@ -80,7 +80,7 @@
             </GridPane>
             <GridPane GridPane.rowIndex="3">
                <children>
-                  <Button fx:id="btn_license" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goToSearchID" prefHeight="70.0" prefWidth="500.0" text="ออกใบขับขี่" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
+                  <Button fx:id="btn_license" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goToLicense" prefHeight="70.0" prefWidth="500.0" text="ออกใบขับขี่" GridPane.halignment="CENTER" GridPane.valignment="CENTER">
                      <font>
                         <Font name="Arial Bold" size="36.0" />
                      </font>
@@ -88,7 +88,7 @@
                         <Insets />
                      </GridPane.margin>
                   </Button>
-                  <Button fx:id="btn_report" alignment="CENTER" layoutX="272.0" layoutY="87.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goToReport" prefHeight="70.0" prefWidth="500.0" text="ต่ออายุบัตร" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                  <Button fx:id="btn_renew" alignment="CENTER" layoutX="272.0" layoutY="87.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goToRenew" prefHeight="70.0" prefWidth="500.0" text="ต่ออายุบัตร" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
                      <font>
                         <Font name="Arial Bold" size="36.0" />
                      </font>
@@ -96,7 +96,7 @@
                         <Insets />
                      </GridPane.margin>
                   </Button>
-                  <Button fx:id="btn_logout" alignment="CENTER" cancelButton="true" layoutX="272.0" layoutY="310.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#logout" prefHeight="70.0" prefWidth="500.0" text="ทำบัตรทดแทน" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
+                  <Button fx:id="btn_redo" alignment="CENTER" cancelButton="true" layoutX="272.0" layoutY="310.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goToRedo" prefHeight="70.0" prefWidth="500.0" text="ออกบัตรทดแทน" GridPane.halignment="CENTER" GridPane.rowIndex="2" GridPane.valignment="CENTER">
                      <font>
                         <Font name="Arial Bold" size="36.0" />
                      </font>
@@ -104,12 +104,12 @@
                         <Insets />
                      </GridPane.margin>
                   </Button>
-                  <Button fx:id="btn_logout1" alignment="CENTER" cancelButton="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#logout" prefHeight="70.0" prefWidth="500.0" text="แก้ไขข้อมูล" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
+                  <Button fx:id="btn_edit" alignment="CENTER" cancelButton="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goToEdit" prefHeight="70.0" prefWidth="500.0" text="แก้ไขข้อมูล" GridPane.halignment="CENTER" GridPane.rowIndex="3" GridPane.valignment="CENTER">
                      <font>
                         <Font name="Arial Bold" size="36.0" />
                      </font>
                   </Button>
-                  <Button fx:id="btn_logout11" alignment="CENTER" cancelButton="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#logout" prefHeight="70.0" prefWidth="500.0" text="กลับสู่หน้าค้นหาประวัติ" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
+                  <Button fx:id="btn_back" alignment="CENTER" cancelButton="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#goToSearchID" prefHeight="70.0" prefWidth="500.0" text="กลับสู่หน้าค้นหาประวัติ" GridPane.halignment="CENTER" GridPane.rowIndex="4" GridPane.valignment="CENTER">
                      <font>
                         <Font name="Arial Bold" size="36.0" />
                      </font>

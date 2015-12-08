@@ -44,7 +44,7 @@ public class CheckProfileController implements Initializable {
     private Button btn_next;
     @FXML
     private Text result;
-
+    
     /**
      * Initializes the controller class.
      */
@@ -83,5 +83,6 @@ public class CheckProfileController implements Initializable {
         Stage stage = (Stage) btn_home.getScene().getWindow();
         stage.setScene(scene);
         stage.show();
-    }    
+    }
+    
 }
