@@ -157,24 +157,24 @@
                            <children>
                               <GridPane hgap="20.0" style="-fx-background-color: #faf2f1;">
                                  <children>
-                                    <Label text="สกุล :" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                    <Label text="สกุล:" GridPane.columnIndex="2" GridPane.rowIndex="1">
                                        <font>
-                                          <Font name="Arial" size="16.0" />
+                                          <Font name="Arial Bold" size="16.0" />
                                        </font>
                                     </Label>
-                                    <Label text="ชื่อ :" GridPane.rowIndex="1">
+                                    <Label text="ชื่อ:" GridPane.rowIndex="1">
                                        <font>
-                                          <Font name="Arial" size="16.0" />
+                                          <Font name="Arial Bold" size="16.0" />
                                        </font>
                                     </Label>
-                                    <Label text="Name :" GridPane.rowIndex="2">
+                                    <Label text="Name:" GridPane.rowIndex="2">
                                        <font>
-                                          <Font name="Arial" size="16.0" />
+                                          <Font name="Arial Bold" size="16.0" />
                                        </font>
                                     </Label>
-                                    <Label text="Surname :" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                    <Label text="Surname:" GridPane.columnIndex="2" GridPane.rowIndex="2">
                                        <font>
-                                          <Font name="Arial" size="16.0" />
+                                          <Font name="Arial Bold" size="16.0" />
                                        </font>
                                     </Label>
                                     <Label text=" วิวผกา" GridPane.columnIndex="1" GridPane.rowIndex="1">
@@ -248,7 +248,7 @@
                            <children>
                               <Label text="ประเภท:" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
                                  <font>
-                                    <Font name="Arial" size="16.0" />
+                                    <Font name="Arial Bold" size="16.0" />
                                  </font>
                               </Label>
                               <GridPane GridPane.columnIndex="1">
@@ -260,9 +260,9 @@
                                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                                 </rowConstraints>
                                  <children>
-                                    <Label text="ประเภท :" GridPane.halignment="RIGHT">
+                                    <Label text="ประเภท:" GridPane.halignment="RIGHT">
                                        <font>
-                                          <Font name="Arial" size="16.0" />
+                                          <Font name="Arial Bold" size="16.0" />
                                        </font>
                                     </Label>
                                     <MenuButton focusTraversable="false" mnemonicParsing="false" prefWidth="280.0" text="ใบอนุญาตขับรถยนต์ชั่วคราว" GridPane.columnIndex="1">
@@ -296,22 +296,22 @@
                               </GridPane>
                               <Label text="ฉบับที่:" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
                                  <font>
-                                    <Font name="Arial" size="16.0" />
+                                    <Font name="Arial Bold" size="16.0" />
                                  </font>
                               </Label>
                               <Label text="จังหวัดที่ออก:" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
                                  <font>
-                                    <Font name="Arial" size="16.0" />
+                                    <Font name="Arial Bold" size="16.0" />
                                  </font>
                               </Label>
                               <Label text="วันที่ออกบัตร:" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
                                  <font>
-                                    <Font name="Arial" size="16.0" />
+                                    <Font name="Arial Bold" size="16.0" />
                                  </font>
                               </Label>
                               <Label text="วันหมดอายุ:" GridPane.halignment="RIGHT" GridPane.rowIndex="5">
                                  <font>
-                                    <Font name="Arial" size="16.0" />
+                                    <Font name="Arial Bold" size="16.0" />
                                  </font>
                               </Label>
                               <Label text="ใบอนุญาตขับรถยนต์ชั่วคราว" GridPane.columnIndex="1" GridPane.rowIndex="1">
@@ -341,7 +341,7 @@
                               </Label>
                               <Label layoutX="225.0" layoutY="173.0" text="สถานะใบขับขี่:" GridPane.halignment="RIGHT" GridPane.rowIndex="6" GridPane.valignment="CENTER">
                                  <font>
-                                    <Font name="Arial" size="16.0" />
+                                    <Font name="Arial Bold" size="16.0" />
                                  </font>
                               </Label>
                               <Label layoutX="330.0" layoutY="173.0" text="หมดอายุ" GridPane.columnIndex="1" GridPane.rowIndex="6">

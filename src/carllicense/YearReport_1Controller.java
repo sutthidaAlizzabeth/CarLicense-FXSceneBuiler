@@ -25,9 +25,11 @@ import javafx.stage.Stage;
  *
  * @author Alizzabeth
  */
-public class DailyReportController implements Initializable {
+public class YearReport_1Controller implements Initializable {
     @FXML
-    private Button btn_home;
+    private DatePicker input_date;
+    @FXML
+    private MenuButton kind;
     @FXML
     private GridPane show_month_year;
     @FXML
@@ -37,9 +39,7 @@ public class DailyReportController implements Initializable {
     @FXML
     private Button btn_view_stat;
     @FXML
-    private MenuButton kind;
-    @FXML
-    private DatePicker input_date;
+    private Button btn_home;
 
     /**
      * Initializes the controller class.
@@ -48,15 +48,23 @@ public class DailyReportController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
     }    
-    
-    @FXML
-    public void exit(){
-        System.exit(0);
-    }
-    
+
     @FXML
     private void logout(ActionEvent event) throws IOException {
         Parent page = FXMLLoader.load(getClass().getResource("index.fxml"));
+        Scene scene = new Scene(page);
+        Stage stage = (Stage) btn_home.getScene().getWindow();
+        stage.setScene(scene);
+    }
+
+    @FXML
+    private void exit(ActionEvent event) {
+        System.exit(0);
+    }
+
+    @FXML
+    private void day(ActionEvent event) throws IOException {
+        Parent page = FXMLLoader.load(getClass().getResource("dailyReport.fxml"));
         Scene scene = new Scene(page);
         Stage stage = (Stage) btn_home.getScene().getWindow();
         stage.setScene(scene);
@@ -64,12 +72,17 @@ public class DailyReportController implements Initializable {
     }
 
     @FXML
-    private void goToHome(ActionEvent event) throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("menuSelect.fxml"));
+    private void month(ActionEvent event) throws IOException {
+        Parent page = FXMLLoader.load(getClass().getResource("yearReport.fxml"));
         Scene scene = new Scene(page);
         Stage stage = (Stage) btn_home.getScene().getWindow();
         stage.setScene(scene);
         stage.show();
+    }
+
+    @FXML
+    private void year(ActionEvent event) throws IOException {
+        kind.setText("รายงานประจำปี");
     }
 
     @FXML
@@ -122,66 +135,82 @@ public class DailyReportController implements Initializable {
 
     @FXML
     private void set2000(ActionEvent event) {
+        input_year.setText("2000");
     }
 
     @FXML
     private void set2001(ActionEvent event) {
+        input_year.setText("2001");
     }
 
     @FXML
     private void set2002(ActionEvent event) {
+        input_year.setText("2002");
     }
 
     @FXML
     private void set2003(ActionEvent event) {
+        input_year.setText("2003");
     }
 
     @FXML
     private void set2004(ActionEvent event) {
+        input_year.setText("2004");
     }
 
     @FXML
     private void set2005(ActionEvent event) {
+        input_year.setText("2005");
     }
 
     @FXML
     private void set2006(ActionEvent event) {
+        input_year.setText("2006");
     }
 
     @FXML
     private void set2007(ActionEvent event) {
+        input_year.setText("2007");
     }
 
     @FXML
     private void set2008(ActionEvent event) {
+        input_year.setText("2008");
     }
 
     @FXML
     private void set2009(ActionEvent event) {
+        input_year.setText("2009");
     }
 
     @FXML
     private void set2010(ActionEvent event) {
+        input_year.setText("2010");
     }
 
     @FXML
     private void set2011(ActionEvent event) {
+        input_year.setText("2011");
     }
 
     @FXML
     private void set2012(ActionEvent event) {
+        input_year.setText("2012");
     }
 
     @FXML
     private void set2013(ActionEvent event) {
+        input_year.setText("2013");
     }
 
     @FXML
     private void set2014(ActionEvent event) {
+        input_year.setText("2014");
     }
 
     @FXML
     private void set2015(ActionEvent event) {
+        input_year.setText("2015");
     }
 
     @FXML
@@ -194,30 +223,11 @@ public class DailyReportController implements Initializable {
     }
 
     @FXML
-    private void day(ActionEvent event) {
-        kind.setText("รายงานประจำวัน");
-        input_date.setVisible(true);
-        show_month_year.setVisible(true);
-        input_month.setVisible(false);
-        input_year.setVisible(false);
-    }
-
-    @FXML
-    private void month(ActionEvent event) throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("yearReport.fxml"));
+    private void goToHome(ActionEvent event) throws IOException {
+        Parent page = FXMLLoader.load(getClass().getResource("menuSelect.fxml"));
         Scene scene = new Scene(page);
         Stage stage = (Stage) btn_home.getScene().getWindow();
         stage.setScene(scene);
         stage.show();
     }
-
-    @FXML
-    private void year(ActionEvent event) throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("yearReport_1.fxml"));
-        Scene scene = new Scene(page);
-        Stage stage = (Stage) btn_home.getScene().getWindow();
-        stage.setScene(scene);
-        stage.show();
-    }
-    
 }

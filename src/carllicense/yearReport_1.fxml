@@ -11,7 +11,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carllicense.YearReportController">
+<AnchorPane id="AnchorPane" prefHeight="768.0" prefWidth="1024.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="carllicense.YearReport_1Controller">
    <children>
       <MenuBar prefHeight="29.0" prefWidth="1024.0">
          <menus>
@@ -88,26 +88,6 @@
                               <MenuItem mnemonicParsing="false" onAction="#setOct" text="ตุลาคม" />
                               <MenuItem mnemonicParsing="false" onAction="#setNov" text="พฤศจิกายน                                  " />
                               <MenuItem mnemonicParsing="false" onAction="#setDec" text="ธันวาคม" />
-                           </items>
-                        </MenuButton>
-                        <MenuButton fx:id="input_year" mnemonicParsing="false" prefHeight="27.0" prefWidth="111.0" text="2015">
-                           <items>
-                              <MenuItem mnemonicParsing="false" onAction="#set2000" text="2000               " />
-                              <MenuItem mnemonicParsing="false" onAction="#set2001" text="2001" />
-                              <MenuItem mnemonicParsing="false" onAction="#set2002" text="2002" />
-                              <MenuItem mnemonicParsing="false" onAction="#set2003" text="2003" />
-                              <MenuItem mnemonicParsing="false" onAction="#set2004" text="2004" />
-                              <MenuItem mnemonicParsing="false" onAction="#set2005" text="2005" />
-                              <MenuItem mnemonicParsing="false" onAction="#set2006" text="2006" />
-                              <MenuItem mnemonicParsing="false" onAction="#set2007" text="2007" />
-                              <MenuItem mnemonicParsing="false" onAction="#set2008" text="2008" />
-                              <MenuItem mnemonicParsing="false" onAction="#set2009" text="2009" />
-                              <MenuItem mnemonicParsing="false" onAction="#set2010" text="2010" />
-                              <MenuItem mnemonicParsing="false" onAction="#set2011" text="2011" />
-                              <MenuItem mnemonicParsing="false" onAction="#set2012" text="2012" />
-                              <MenuItem mnemonicParsing="false" onAction="#set2013" text="2013" />
-                              <MenuItem mnemonicParsing="false" onAction="#set2014" text="2014" />
-                              <MenuItem mnemonicParsing="false" onAction="#set2015" text="2015" />
                            </items>
                         </MenuButton>
                         <Button mnemonicParsing="false" text="พิมพ์" GridPane.columnIndex="2" GridPane.halignment="RIGHT" />

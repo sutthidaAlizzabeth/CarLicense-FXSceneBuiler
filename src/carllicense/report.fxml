@@ -211,58 +211,6 @@
                       <MenuItem fx:id="year" mnemonicParsing="false" onAction="#year" text="รายประจำปี" />
                     </items>
                   </MenuButton>
-                  <GridPane fx:id="show_month_year" hgap="5.0" GridPane.columnIndex="2">
-                    <columnConstraints>
-                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="473.33331298828125" minWidth="10.0" prefWidth="124.0" />
-                      <ColumnConstraints hgrow="SOMETIMES" maxWidth="496.0" minWidth="10.0" prefWidth="148.0" />
-                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="496.0" minWidth="10.0" prefWidth="163.0" />
-                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="496.0" minWidth="10.0" prefWidth="98.0" />
-                    </columnConstraints>
-                    <rowConstraints>
-                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
-                    </rowConstraints>
-                     <children>
-                        <MenuButton fx:id="input_month" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="212.0" text="พฤศจิกายน" visible="false" GridPane.columnIndex="1">
-                           <items>
-                              <MenuItem mnemonicParsing="false" onAction="#setJan" text="มกราคม" />
-                              <MenuItem mnemonicParsing="false" onAction="#setFeb" text="กุมภาพันธ์" />
-                              <MenuItem mnemonicParsing="false" onAction="#setMar" text="มีนาคม" />
-                              <MenuItem mnemonicParsing="false" onAction="#setApr" text="เมษายน" />
-                              <MenuItem mnemonicParsing="false" onAction="#setMay" text="พฤษภาคม" />
-                              <MenuItem mnemonicParsing="false" onAction="#setJun" text="มิถุนายน" />
-                              <MenuItem mnemonicParsing="false" onAction="#setJul" text="กรกฎาคม" />
-                              <MenuItem mnemonicParsing="false" onAction="#setAug" text="สิงหาคม" />
-                              <MenuItem mnemonicParsing="false" onAction="#setSep" text="กันยายน" />
-                              <MenuItem mnemonicParsing="false" onAction="#setOct" text="ตุลาคม" />
-                              <MenuItem mnemonicParsing="false" onAction="#setNov" text="พฤศจิกายน                                  " />
-                              <MenuItem mnemonicParsing="false" onAction="#setDec" text="ธันวาคม" />
-                           </items>
-                        </MenuButton>
-                        <MenuButton fx:id="input_year" maxWidth="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="27.0" prefWidth="111.0" text="2015" visible="false">
-                           <items>
-                              <MenuItem mnemonicParsing="false" onAction="#set2000" text="2000               " />
-                              <MenuItem mnemonicParsing="false" onAction="#set2001" text="2001" />
-                              <MenuItem mnemonicParsing="false" onAction="#set2002" text="2002" />
-                              <MenuItem mnemonicParsing="false" onAction="#set2003" text="2003" />
-                              <MenuItem mnemonicParsing="false" onAction="#set2004" text="2004" />
-                              <MenuItem mnemonicParsing="false" onAction="#set2005" text="2005" />
-                              <MenuItem mnemonicParsing="false" onAction="#set2006" text="2006" />
-                              <MenuItem mnemonicParsing="false" onAction="#set2007" text="2007" />
-                              <MenuItem mnemonicParsing="false" onAction="#set2008" text="2008" />
-                              <MenuItem mnemonicParsing="false" onAction="#set2009" text="2009" />
-                              <MenuItem mnemonicParsing="false" onAction="#set2010" text="2010" />
-                              <MenuItem mnemonicParsing="false" onAction="#set2011" text="2011" />
-                              <MenuItem mnemonicParsing="false" onAction="#set2012" text="2012" />
-                              <MenuItem mnemonicParsing="false" onAction="#set2013" text="2013" />
-                              <MenuItem mnemonicParsing="false" onAction="#set2014" text="2014" />
-                              <MenuItem mnemonicParsing="false" onAction="#set2015" text="2015" />
-                           </items>
-                        </MenuButton>
-                        <Button mnemonicParsing="false" text="พิมพ์" GridPane.columnIndex="2" GridPane.halignment="RIGHT" />
-                        <Button mnemonicParsing="false" text="บันทึกเป็น" GridPane.columnIndex="3" GridPane.halignment="LEFT" />
-                     </children>
-                  </GridPane>
-                  <DatePicker GridPane.columnIndex="2" />
                </children>
             </GridPane>
             <GridPane prefHeight="43.0" prefWidth="984.0" GridPane.rowIndex="3">

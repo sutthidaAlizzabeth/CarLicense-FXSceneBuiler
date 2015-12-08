@@ -73,21 +73,21 @@ public class YearReportController implements Initializable {
 
     @FXML
     private void month(ActionEvent event) throws IOException {
-        Parent page = FXMLLoader.load(getClass().getResource("monthReport.fxml"));
-        Scene scene = new Scene(page);
-        Stage stage = (Stage) btn_home.getScene().getWindow();
-        stage.setScene(scene);
-        stage.show();
-    }
-
-    @FXML
-    private void year(ActionEvent event) {
-        kind.setText("รายงานประจำปี");
+        kind.setText("รายงานประจำเดือน");
         input_date.setVisible(false);
         show_month_year.setVisible(true);
         input_month.setVisible(false);
         input_year.setVisible(true);
         input_year.setText("2015");
+    }
+
+    @FXML
+    private void year(ActionEvent event) throws IOException {
+        Parent page = FXMLLoader.load(getClass().getResource("yearReport_1.fxml"));
+        Scene scene = new Scene(page);
+        Stage stage = (Stage) btn_home.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
