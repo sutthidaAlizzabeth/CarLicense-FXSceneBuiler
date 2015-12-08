@@ -65,7 +65,7 @@
                         <Font name="Arial Bold" size="18.0" />
                      </font>
                   </Label>
-                  <MenuButton fx:id="kind" mnemonicParsing="false" prefWidth="200.0" text="รายงานประจำเดือน" GridPane.columnIndex="1">
+                  <MenuButton fx:id="kind" mnemonicParsing="false" prefWidth="200.0" text="รายงานประจำปี" GridPane.columnIndex="1">
                     <items>
                       <MenuItem mnemonicParsing="false" onAction="#day" text="รายงานประจำวัน" />
                       <MenuItem mnemonicParsing="false" onAction="#month" text="รายงานประจำเดือน                 " />
@@ -179,7 +179,7 @@
                           </rowConstraints>
                            <children>
                               <Label text="ลำดับที่" GridPane.halignment="CENTER" />
-                              <Label text="เดือน" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
+                              <Label text="ปีพุทธศักราย" GridPane.columnIndex="1" GridPane.halignment="CENTER" />
                               <Label text="ออกบัตรใหม่ (รายการ)" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
                               <Label text="ออกบัตรทดแทน (รายการ)" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
                               <Label text="ต่ออายุบัตร (รายการ)" GridPane.columnIndex="4" GridPane.halignment="CENTER" />
@@ -218,7 +218,7 @@
                                 </rowConstraints>
                                  <children>
                                     <Label text="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                    <Label layoutX="43.0" layoutY="20.0" text="มกราคม" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="43.0" layoutY="20.0" text="2547" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="154.0" layoutY="20.0" text="32" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="383.0" layoutY="20.0" text="23" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="624.0" layoutY="20.0" text="52" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
@@ -227,7 +227,7 @@
                               <GridPane layoutX="10.0" layoutY="10.0" style="-fx-background-color: #E6E6E6;" GridPane.rowIndex="1">
                                  <children>
                                     <Label text="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                    <Label layoutX="43.0" layoutY="20.0" text="กุมภาพันธ์" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="43.0" layoutY="20.0" text="2548" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="154.0" layoutY="20.0" text="41" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="383.0" layoutY="20.0" text="23" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="624.0" layoutY="20.0" text="21" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
@@ -246,7 +246,7 @@
                               <GridPane layoutX="10.0" layoutY="47.0" style="-fx-background-color: #E6E6E6;" GridPane.rowIndex="3">
                                  <children>
                                     <Label text="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                    <Label layoutX="43.0" layoutY="20.0" text="เมษายน" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="43.0" layoutY="20.0" text="2550" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="154.0" layoutY="20.0" text="85" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="383.0" layoutY="20.0" text="20" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="624.0" layoutY="20.0" text="93" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
@@ -265,7 +265,7 @@
                               <GridPane layoutX="10.0" layoutY="10.0" GridPane.rowIndex="2">
                                  <children>
                                     <Label text="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                    <Label layoutX="43.0" layoutY="20.0" text="มีนาคม" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="43.0" layoutY="20.0" text="2549" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="154.0" layoutY="20.0" text="64" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="383.0" layoutY="20.0" text="82" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="624.0" layoutY="20.0" text="48" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
@@ -284,7 +284,7 @@
                               <GridPane layoutX="10.0" layoutY="84.0" GridPane.rowIndex="4">
                                  <children>
                                     <Label text="5" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                    <Label layoutX="43.0" layoutY="20.0" text="พฤษภาคม" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="43.0" layoutY="20.0" text="2551" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="154.0" layoutY="20.0" text="64" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="383.0" layoutY="20.0" text="82" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="624.0" layoutY="20.0" text="48" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
@@ -303,7 +303,7 @@
                               <GridPane layoutX="10.0" layoutY="121.0" style="-fx-background-color: #E6E6E6;" GridPane.rowIndex="5">
                                  <children>
                                     <Label text="6" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                    <Label layoutX="43.0" layoutY="20.0" text="มิถุนาน" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="43.0" layoutY="20.0" text="2552" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="154.0" layoutY="20.0" text="65" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="383.0" layoutY="20.0" text="35" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="624.0" layoutY="20.0" text="39" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
@@ -322,7 +322,7 @@
                               <GridPane layoutX="10.0" layoutY="158.0" GridPane.rowIndex="6">
                                  <children>
                                     <Label text="7" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                    <Label layoutX="43.0" layoutY="20.0" text="กรกฎาคม" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="43.0" layoutY="20.0" text="2553" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="154.0" layoutY="20.0" text="83" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="383.0" layoutY="20.0" text="25" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="624.0" layoutY="20.0" text="82" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
@@ -341,7 +341,7 @@
                               <GridPane layoutX="10.0" layoutY="195.0" style="-fx-background-color: #E6E6E6;" GridPane.rowIndex="7">
                                  <children>
                                     <Label text="8" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                    <Label layoutX="43.0" layoutY="20.0" text="สิงหาคม" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="43.0" layoutY="20.0" text="2554" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="154.0" layoutY="20.0" text="62" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="383.0" layoutY="20.0" text="53" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="624.0" layoutY="20.0" text="19" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
@@ -360,7 +360,7 @@
                               <GridPane layoutX="10.0" layoutY="232.0" GridPane.rowIndex="8">
                                  <children>
                                     <Label text="9" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                    <Label layoutX="43.0" layoutY="20.0" text="กันยายน" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="43.0" layoutY="20.0" text="2555" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="154.0" layoutY="20.0" text="37" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="383.0" layoutY="20.0" text="92" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="624.0" layoutY="20.0" text="18" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
@@ -379,7 +379,7 @@
                               <GridPane layoutX="10.0" layoutY="268.0" style="-fx-background-color: #E6E6E6;" GridPane.rowIndex="9">
                                  <children>
                                     <Label text="10" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                    <Label layoutX="43.0" layoutY="20.0" text="ตุลาคม" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="43.0" layoutY="20.0" text="2556" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="154.0" layoutY="20.0" text="28" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="383.0" layoutY="20.0" text="75" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="624.0" layoutY="20.0" text="84" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
@@ -398,7 +398,7 @@
                               <GridPane layoutX="10.0" layoutY="304.0" GridPane.rowIndex="10">
                                  <children>
                                     <Label text="11" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                    <Label layoutX="43.0" layoutY="20.0" text="พฤศจิกายน" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="43.0" layoutY="20.0" text="2557" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="154.0" layoutY="20.0" text="79" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="383.0" layoutY="20.0" text="69" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="624.0" layoutY="20.0" text="73" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
@@ -417,7 +417,7 @@
                               <GridPane layoutX="10.0" layoutY="340.0" style="-fx-background-color: #E6E6E6;" GridPane.rowIndex="11">
                                  <children>
                                     <Label text="12" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
-                                    <Label layoutX="43.0" layoutY="20.0" text="ธันวาคม" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
+                                    <Label layoutX="43.0" layoutY="20.0" text="2558" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="154.0" layoutY="20.0" text="83" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="383.0" layoutY="20.0" text="96" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />
                                     <Label layoutX="624.0" layoutY="20.0" text="27" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.valignment="CENTER" />

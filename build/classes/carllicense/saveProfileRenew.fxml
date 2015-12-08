@@ -348,7 +348,7 @@
                <children>
                   <Button fx:id="btn_home" mnemonicParsing="false" onAction="#goToHome" prefWidth="200.0" text="กลับหน้าแรก " />
                   <Button fx:id="btn_back" mnemonicParsing="false" onAction="#goToHistory" prefWidth="200.0" text="ย้อนกลับ" GridPane.columnIndex="2" />
-                  <Button fx:id="btn_pay" layoutX="544.0" layoutY="38.0" mnemonicParsing="false" prefWidth="200.0" text="ชำระค่าธรรมเนียม" GridPane.columnIndex="3" />
+                  <Button fx:id="btn_pay" layoutX="544.0" layoutY="38.0" mnemonicParsing="false" onAction="#goToPaymentRenew" prefWidth="200.0" text="ชำระค่าธรรมเนียม" GridPane.columnIndex="3" />
                </children>
             </GridPane>
             <Label text="ชื่อผู้ใช้: สุทธิดา" GridPane.halignment="RIGHT" GridPane.valignment="TOP">

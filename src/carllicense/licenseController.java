@@ -242,6 +242,33 @@ public class licenseController implements Initializable {
         stage.setScene(scene);
         stage.show();
     }
+    
+    @FXML
+    private void goToPayment(ActionEvent event) throws IOException {
+        Parent page = FXMLLoader.load(getClass().getResource("payment.fxml"));
+        Scene scene = new Scene(page);
+        Stage stage = (Stage) btn_pay.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    @FXML
+    private void goToPaymentCon(ActionEvent event) throws IOException {
+        Parent page = FXMLLoader.load(getClass().getResource("paymentCon.fxml"));
+        Scene scene = new Scene(page);
+        Stage stage = (Stage) btn_pay.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
+    
+    @FXML
+    private void goToPaymentRenew(ActionEvent event) throws IOException {
+        Parent page = FXMLLoader.load(getClass().getResource("paymentRenew.fxml"));
+        Scene scene = new Scene(page);
+        Stage stage = (Stage) btn_pay.getScene().getWindow();
+        stage.setScene(scene);
+        stage.show();
+    }
 
     @FXML
     private void goToEdit(ActionEvent event) throws IOException {

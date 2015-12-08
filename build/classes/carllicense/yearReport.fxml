@@ -65,7 +65,7 @@
                         <Font name="Arial Bold" size="18.0" />
                      </font>
                   </Label>
-                  <MenuButton fx:id="kind" mnemonicParsing="false" prefWidth="200.0" text="รายงานประจำปี" GridPane.columnIndex="1">
+                  <MenuButton fx:id="kind" mnemonicParsing="false" prefWidth="200.0" text="รายงานประจำเดือน" GridPane.columnIndex="1">
                     <items>
                       <MenuItem mnemonicParsing="false" onAction="#day" text="รายงานประจำวัน" />
                       <MenuItem mnemonicParsing="false" onAction="#month" text="รายงานประจำเดือน                 " />
